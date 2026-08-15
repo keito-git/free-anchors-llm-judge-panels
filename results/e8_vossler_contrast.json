@@ -1,0 +1,115 @@
+{
+ "env": {
+  "script": "e8_vossler_contrast.py",
+  "design": "internal design note",
+  "seed": 7,
+  "L": 3,
+  "M": 3,
+  "K": 3,
+  "m_families": 3,
+  "n_judges": 9,
+  "n_candidates": 6,
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0,
+  "kind": "worked example, not a hypothesis test"
+ },
+ "truth": {
+  "expected_scores": [
+   1.6500000000000001,
+   2.05,
+   2.35,
+   1.99,
+   2.0,
+   1.995
+  ],
+  "tied_pair": [
+   4,
+   5
+  ],
+  "gap0": 0.0050000000000001155
+ },
+ "vossler_contract": {
+  "gauge_direction": "D = w q^T with 1^T w = 0",
+  "dgap_dt": -0.35510561809129415,
+  "t_flip": 0.014080317925904131,
+  "admissible_interval": [
+   -0.0378704488256572,
+   0.15479099948260447
+  ],
+  "continuum": true,
+  "flip_inside_interval": true,
+  "t_evaluated": 0.0844356587042543,
+  "marginal_invariance_max_abs": 5.551115123125783e-17,
+  "theta_t_column_stochastic": true,
+  "pi_t_in_simplex": true,
+  "expected_scores_after_gauge": [
+   1.638230078903494,
+   2.081624232441118,
+   2.337397862260307,
+   1.9895244476324643,
+   1.9805023529310404,
+   2.00548592970416
+  ],
+  "ranking_of_tied_pair_flipped": true,
+  "jacobian_shape": [
+   162,
+   66
+  ],
+  "null_dim": 6,
+  "smallest_svals": [
+   0.33972402163077314,
+   0.33972402163077303,
+   5.257813660924258e-16,
+   4.632792393861343e-16,
+   4.3469185752689023e-16,
+   2.8272769035057603e-16,
+   1.988775281388573e-16,
+   1.5594061952937363e-16
+  ],
+  "verdict": "non-identified: a continuum of observationally equivalent parameters reverses a ranking"
+ },
+ "pooled_contract": {
+  "joint_tensor_invariance_max_abs": 4.163336342344337e-17,
+  "transformed_prototypes_are_vertices": false,
+  "transformed_prototype_min_entry": -0.04874411767239931,
+  "jacobian_shape": [
+   27,
+   20
+  ],
+  "null_dim": 0,
+  "smallest_svals": [
+   0.20103589382021447,
+   0.16166334269873153,
+   0.15529906766067214,
+   0.14459266581062546,
+   0.13583141940671237,
+   0.12043283243840266,
+   0.11499544059576983,
+   0.08477365106743813
+  ],
+  "kruskal_ranks": [
+   3,
+   3,
+   3
+  ],
+  "kruskal_sum": 9,
+  "kruskal_threshold_2K_plus_2": 8,
+  "kruskal_satisfied": true,
+  "em_starts": 30,
+  "em_recovery_err_median": 3.3306690738754696e-16,
+  "em_recovery_err_max": 5.551115123125783e-16,
+  "em_success_fraction": 1.0,
+  "recovered_expected_scores": [
+   1.6500000000000001,
+   2.0500000000000007,
+   2.3500000000000005,
+   1.9900000000000004,
+   2.0,
+   1.9950000000000003
+  ],
+  "ranking_recovered_exactly": true,
+  "verdict": "identified: Kruskal certificate holds and every EM start recovers the truth"
+ },
+ "reading": "Both verdicts hold on the same population. The gauge action leaves Vossler's marginals and our joint tensor equally invariant; what differs is how the parameter class intersects the gauge orbit. The item-free class contains a continuum of the orbit, the pooled point contract meets it only at permutations. The experiment instantiates the theorems, it does not prove them, and it does not contradict Vossler et al."
+}

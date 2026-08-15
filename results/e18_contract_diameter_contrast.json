@@ -1,0 +1,65 @@
+{
+ "env": {
+  "script": "e18_contract_diameter_contrast.py",
+  "seeds": [
+   42,
+   123,
+   456,
+   789,
+   1024,
+   20260804
+  ],
+  "n_dirs_per_seed": 4000,
+  "L": 4,
+  "note": "m = 0 diameters only; NTCIR carries no judge panel, so family kernels and therefore m >= 1 diameters are not defined for the distribution-contract collection.",
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "contract_A_llmjudge": {
+  "prototypes": "gold-conditioned mean, L=4",
+  "eta": 0.035192322224741494,
+  "floor_2eta": 0.07038464444948299,
+  "diameter_m0": 1.6522373673184734,
+  "n_directions": 24000
+ },
+ "contract_B_ntcir": {
+  "source": "results/e13_ntcir_measured_intent.json",
+  "interior_fraction": {
+   "Japanese": 0.815378454144974,
+   "Chinese": 0.5617283950617284
+  },
+  "Japanese": {
+   "n_profiles_total": 2497,
+   "prototypes": "mean profile per dominant grade (matches contract A)",
+   "n_prototypes": 4,
+   "items_per_dominant_grade": {
+    "0": 1073,
+    "1": 732,
+    "2": 405,
+    "3": 287
+   },
+   "eta": 0.0507359329686582,
+   "floor_2eta": 0.1014718659373164,
+   "diameter_m0": 1.5000964307361582,
+   "n_directions": 24000,
+   "diameter_m0_raw_400_profiles": 2.8535142621805466e-11
+  },
+  "Chinese": {
+   "n_profiles_total": 3564,
+   "prototypes": "mean profile per dominant grade (matches contract A)",
+   "n_prototypes": 4,
+   "items_per_dominant_grade": {
+    "0": 1957,
+    "1": 1468,
+    "2": 92,
+    "3": 47
+   },
+   "eta": 0.006110516770179666,
+   "floor_2eta": 0.012221033540359331,
+   "diameter_m0": 1.8121436001240145,
+   "n_directions": 24000,
+   "diameter_m0_raw_400_profiles": 2.8535142621805466e-11
+  }
+ }
+}

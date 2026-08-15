@@ -1,0 +1,170 @@
+{
+ "env": {
+  "script": "e20_optimised_reruns.py",
+  "seeds": [
+   42,
+   123,
+   456,
+   789,
+   1024,
+   20260804
+  ],
+  "sampled_directions": 4000,
+  "optimiser": "Nelder-Mead, 10 starts, maxiter 700",
+  "note": "optimised values are still lower bounds (local search)",
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "E17_partitions": {
+  "A": {
+   "description": "model lineage (paper default)",
+   "families": [
+    "GPT",
+    "Llama",
+    "T5"
+   ],
+   "sampled": {
+    "m=0": 1.6522373673184734,
+    "m=1": 1.1644178813105488,
+    "m=2": 1.1644178813105488,
+    "m=3": 1.1644178813105488
+   },
+   "optimised": {
+    "m=0": 1.9296153555563693,
+    "m=1": 1.6335827098906033,
+    "m=2": 1.621365801382764,
+    "m=3": 1.621365801382764
+   },
+   "optimised_step_reduction_pct": [
+    15.341536582061998,
+    0.747859807395812,
+    0.0
+   ],
+   "binds_after_first_optimised": true
+  },
+  "C": {
+   "description": "lineage with Llama split by fine-tuning",
+   "families": [
+    "GPT",
+    "Llama-zs",
+    "Llama-ft",
+    "T5"
+   ],
+   "sampled": {
+    "m=0": 1.6522373673184734,
+    "m=1": 1.1644178813105488,
+    "m=2": 1.0536771746813063,
+    "m=3": 1.0536771746813063,
+    "m=4": 1.0536771746813063
+   },
+   "optimised": {
+    "m=0": 1.9296153555563693,
+    "m=1": 1.6335827098906033,
+    "m=2": 1.5198472670610448,
+    "m=3": 1.5198472670610448,
+    "m=4": 1.5198472670610448
+   },
+   "optimised_step_reduction_pct": [
+    15.341536582061998,
+    6.962331453494331,
+    0.0,
+    0.0
+   ],
+   "binds_after_first_optimised": true
+  },
+  "D": {
+   "description": "architecture",
+   "families": [
+    "decoder-only",
+    "encoder-decoder"
+   ],
+   "sampled": {
+    "m=0": 1.6522373673184734,
+    "m=1": 1.2821525252097254,
+    "m=2": 1.2821525252097254
+   },
+   "optimised": {
+    "m=0": 1.9296153555563693,
+    "m=1": 1.609500080713113,
+    "m=2": 1.609500080713113
+   },
+   "optimised_step_reduction_pct": [
+    16.58958993674451,
+    0.0
+   ],
+   "binds_after_first_optimised": false
+  },
+  "E": {
+   "description": "parameter size band",
+   "families": [
+    "proprietary",
+    "8B",
+    "70B",
+    "sub-1B"
+   ],
+   "sampled": {
+    "m=0": 1.6522373673184734,
+    "m=1": 1.1644178813105488,
+    "m=2": 1.1644178813105488,
+    "m=3": 1.0536771746813063,
+    "m=4": 1.0536771746813063
+   },
+   "optimised": {
+    "m=0": 1.9296153555563693,
+    "m=1": 1.6335827098906033,
+    "m=2": 1.5136824327808556,
+    "m=3": 1.5836509742571037,
+    "m=4": 1.5836509742571037
+   },
+   "optimised_step_reduction_pct": [
+    15.341536582061998,
+    7.339712668590693,
+    -4.622405595849166,
+    0.0
+   ],
+   "binds_after_first_optimised": true
+  }
+ },
+ "E12_anchor_sweep": {
+  "sampled_source": "results/e12_structural_anchor_realdata.json",
+  "rows": [
+   {
+    "injection_rate": 0.0,
+    "n_anchors": 0,
+    "n_prototypes": 400,
+    "sampled": 1.2339217867550352,
+    "optimised": 1.9334858154764665
+   },
+   {
+    "injection_rate": 0.005,
+    "n_anchors": 2,
+    "n_prototypes": 402,
+    "sampled": 1.9378691081381718,
+    "optimised": 2.000000000002
+   },
+   {
+    "injection_rate": 0.2,
+    "n_anchors": 80,
+    "n_prototypes": 480,
+    "sampled": 1.9378691081381718,
+    "optimised": 2.000000000002
+   }
+  ],
+  "optimised_reduction_factor_2_anchors": 0.9667429077372665
+ },
+ "E18_contracts": {
+  "LLMJudge": {
+   "sampled": 1.6522373673184734,
+   "optimised": 1.9296153555563693
+  },
+  "Japanese": {
+   "sampled": 1.5000964307361582,
+   "optimised": 1.811850594973709
+  },
+  "Chinese": {
+   "sampled": 1.8121436001240145,
+   "optimised": 1.9510413391759887
+  }
+ }
+}

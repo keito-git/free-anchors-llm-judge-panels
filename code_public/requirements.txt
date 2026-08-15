@@ -1,0 +1,6 @@
+# CPU only. No GPU and no API access is required.
+numpy>=1.26,<2.0
+scipy>=1.11
+pandas>=1.5
+matplotlib>=3.8
+scikit-learn>=1.3

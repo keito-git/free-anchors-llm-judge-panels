@@ -1,0 +1,66 @@
+{
+ "env": {
+  "script": "e29_e6a_e10_optimised.py",
+  "seeds": [
+   42,
+   123,
+   456,
+   789,
+   1024,
+   20260804
+  ],
+  "sampled_directions": 4000,
+  "optimiser": "Nelder-Mead, 16 starts, maxiter 1000",
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "E6a_prototype_constructions": {
+  "gold_mean": {
+   "eta": 0.035192322224741494,
+   "optimised_m1": 1.6335827098979276,
+   "optimised_m3": 1.627763094433784,
+   "reduction_m1_to_m3_pct": 0.35624859573271106
+  },
+  "gold_trimmed_mean": {
+   "eta": 0.011390091390091367,
+   "optimised_m1": 1.5249534933665307,
+   "optimised_m3": 1.5249534933665307,
+   "reduction_m1_to_m3_pct": 0.0
+  },
+  "em_latent_K4": {
+   "eta": 0.005354579583691182,
+   "optimised_m1": 1.2502447046271614,
+   "optimised_m3": 1.2502447046271614,
+   "reduction_m1_to_m3_pct": 0.0
+  },
+  "spread_pct": 23.192465236345836
+ },
+ "E10_fitting_K": {
+  "K=4": {
+   "optimised_m1": 1.2502447046271614,
+   "optimised_m3": 1.2502447046271614,
+   "reduction_m1_to_m3_pct": 0.0
+  },
+  "K=5": {
+   "optimised_m1": 1.6093777493099863,
+   "optimised_m3": 1.5338021068290957,
+   "reduction_m1_to_m3_pct": 4.695954229098387
+  },
+  "K=6": {
+   "optimised_m1": 1.370862330683763,
+   "optimised_m3": 1.370862330683763,
+   "reduction_m1_to_m3_pct": 0.0
+  },
+  "K=8": {
+   "optimised_m1": 1.0500245099824201,
+   "optimised_m3": 1.0500245099824201,
+   "reduction_m1_to_m3_pct": 0.0
+  }
+ },
+ "summary": {
+  "E6a_spread_pct": 23.192465236345836,
+  "E6a_max_reduction_pct": 0.35624859573271106,
+  "E10_max_reduction_pct": 4.695954229098387
+ }
+}

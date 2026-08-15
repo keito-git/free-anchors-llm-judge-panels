@@ -1,0 +1,586 @@
+{
+  "script": "e3_dominance_crosscheck.py (independent implementation)",
+  "date": "2026-08-04",
+  "elapsed_seconds": 0.21,
+  "part1_lr_range": {
+    "all_steps": [
+      {
+        "seed": "0",
+        "step": "2 -> 3",
+        "m_prev": 2,
+        "r1_new": 5.922843937208011,
+        "r1_max": 7.1671165865958875,
+        "r0_new": 0.36048267529039213,
+        "r0_min": 0.42357215665899445,
+        "dominated_mine": false,
+        "diam_change": 0.021261569620253162,
+        "diam_shrank": true
+      },
+      {
+        "seed": "0",
+        "step": "3 -> 4",
+        "m_prev": 3,
+        "r1_new": 4.843865125133687,
+        "r1_max": 7.1671165865958875,
+        "r0_new": 0.3708159598012229,
+        "r0_min": 0.36048267529039213,
+        "dominated_mine": true,
+        "diam_change": 0.0,
+        "diam_shrank": false
+      },
+      {
+        "seed": "0",
+        "step": "4 -> 5",
+        "m_prev": 4,
+        "r1_new": 3.7275550133765636,
+        "r1_max": 7.1671165865958875,
+        "r0_new": 0.32152801866658987,
+        "r0_min": 0.36048267529039213,
+        "dominated_mine": false,
+        "diam_change": 0.012756941772151942,
+        "diam_shrank": true
+      },
+      {
+        "seed": "0",
+        "step": "5 -> 6",
+        "m_prev": 5,
+        "r1_new": 3.2791560625652556,
+        "r1_max": 7.1671165865958875,
+        "r0_new": 0.31981438390064776,
+        "r0_min": 0.32152801866658987,
+        "dominated_mine": false,
+        "diam_change": 0.0,
+        "diam_shrank": false
+      },
+      {
+        "seed": "0",
+        "step": "6 -> 7",
+        "m_prev": 6,
+        "r1_new": 3.3345985695031324,
+        "r1_max": 7.1671165865958875,
+        "r0_new": 0.24542061554621808,
+        "r0_min": 0.31981438390064776,
+        "dominated_mine": false,
+        "diam_change": 0.025513883544303773,
+        "diam_shrank": true
+      },
+      {
+        "seed": "0",
+        "step": "7 -> 8",
+        "m_prev": 7,
+        "r1_new": 3.027015728091155,
+        "r1_max": 7.1671165865958875,
+        "r0_new": 0.2278636014172506,
+        "r0_min": 0.24542061554621808,
+        "dominated_mine": false,
+        "diam_change": 0.008504627848101265,
+        "diam_shrank": true
+      },
+      {
+        "seed": "0",
+        "step": "8 -> 9",
+        "m_prev": 8,
+        "r1_new": 2.9099227096134714,
+        "r1_max": 7.1671165865958875,
+        "r0_new": 0.20051143882661196,
+        "r0_min": 0.2278636014172506,
+        "dominated_mine": false,
+        "diam_change": 0.008504627848101265,
+        "diam_shrank": true
+      },
+      {
+        "seed": "0",
+        "step": "9 -> 10",
+        "m_prev": 9,
+        "r1_new": 2.6582684883609757,
+        "r1_max": 7.1671165865958875,
+        "r0_new": 0.15558853287734528,
+        "r0_min": 0.20051143882661196,
+        "dominated_mine": false,
+        "diam_change": 0.012756941772151897,
+        "diam_shrank": true
+      },
+      {
+        "seed": "1",
+        "step": "2 -> 3",
+        "m_prev": 2,
+        "r1_new": 5.540365227408436,
+        "r1_max": 7.581941123108986,
+        "r0_new": 0.38613231436382556,
+        "r0_min": 0.4171538516141234,
+        "dominated_mine": false,
+        "diam_change": 0.008504627848101243,
+        "diam_shrank": true
+      },
+      {
+        "seed": "1",
+        "step": "3 -> 4",
+        "m_prev": 3,
+        "r1_new": 3.998613267870647,
+        "r1_max": 7.581941123108986,
+        "r0_new": 0.35090498203618264,
+        "r0_min": 0.38613231436382556,
+        "dominated_mine": false,
+        "diam_change": 0.012756941772151887,
+        "diam_shrank": true
+      },
+      {
+        "seed": "1",
+        "step": "4 -> 5",
+        "m_prev": 4,
+        "r1_new": 4.049689802701559,
+        "r1_max": 7.581941123108986,
+        "r0_new": 0.33445270609660616,
+        "r0_min": 0.35090498203618264,
+        "dominated_mine": false,
+        "diam_change": 0.004252313924050644,
+        "diam_shrank": true
+      },
+      {
+        "seed": "1",
+        "step": "5 -> 6",
+        "m_prev": 5,
+        "r1_new": 3.6373220539222313,
+        "r1_max": 7.581941123108986,
+        "r0_new": 0.29781361102125675,
+        "r0_min": 0.33445270609660616,
+        "dominated_mine": false,
+        "diam_change": 0.012756941772151874,
+        "diam_shrank": true
+      },
+      {
+        "seed": "1",
+        "step": "6 -> 7",
+        "m_prev": 6,
+        "r1_new": 3.1028704978046115,
+        "r1_max": 7.581941123108986,
+        "r0_new": 0.28737536608521363,
+        "r0_min": 0.29781361102125675,
+        "dominated_mine": false,
+        "diam_change": 0.004252313924050633,
+        "diam_shrank": true
+      },
+      {
+        "seed": "1",
+        "step": "7 -> 8",
+        "m_prev": 7,
+        "r1_new": 3.153416894579453,
+        "r1_max": 7.581941123108986,
+        "r0_new": 0.23141134528438587,
+        "r0_min": 0.28737536608521363,
+        "dominated_mine": false,
+        "diam_change": 0.017009255696202576,
+        "diam_shrank": true
+      },
+      {
+        "seed": "1",
+        "step": "8 -> 9",
+        "m_prev": 8,
+        "r1_new": 2.8945324593537403,
+        "r1_max": 7.581941123108986,
+        "r0_new": 0.2060432000812738,
+        "r0_min": 0.23141134528438587,
+        "dominated_mine": false,
+        "diam_change": 0.008504627848101243,
+        "diam_shrank": true
+      },
+      {
+        "seed": "1",
+        "step": "9 -> 10",
+        "m_prev": 9,
+        "r1_new": 2.957441184523713,
+        "r1_max": 7.581941123108986,
+        "r0_new": 0.15668598779653925,
+        "r0_min": 0.2060432000812738,
+        "dominated_mine": false,
+        "diam_change": 0.01700925569620253,
+        "diam_shrank": true
+      },
+      {
+        "seed": "2",
+        "step": "2 -> 3",
+        "m_prev": 2,
+        "r1_new": 4.5507960586907465,
+        "r1_max": 8.550273564730512,
+        "r0_new": 0.3934305483674643,
+        "r0_min": 0.42230623685567725,
+        "dominated_mine": false,
+        "diam_change": 0.008504627848101265,
+        "diam_shrank": true
+      },
+      {
+        "seed": "2",
+        "step": "3 -> 4",
+        "m_prev": 3,
+        "r1_new": 4.91918451968884,
+        "r1_max": 8.550273564730512,
+        "r0_new": 0.34242684593403994,
+        "r0_min": 0.3934305483674643,
+        "dominated_mine": false,
+        "diam_change": 0.01700925569620254,
+        "diam_shrank": true
+      },
+      {
+        "seed": "2",
+        "step": "4 -> 5",
+        "m_prev": 4,
+        "r1_new": 3.829874056954313,
+        "r1_max": 8.550273564730512,
+        "r0_new": 0.3333071910753103,
+        "r0_min": 0.34242684593403994,
+        "dominated_mine": false,
+        "diam_change": 0.004252313924050644,
+        "diam_shrank": true
+      },
+      {
+        "seed": "2",
+        "step": "5 -> 6",
+        "m_prev": 5,
+        "r1_new": 3.470014270541507,
+        "r1_max": 8.550273564730512,
+        "r0_new": 0.29324610602737333,
+        "r0_min": 0.3333071910753103,
+        "dominated_mine": false,
+        "diam_change": 0.012756941772151874,
+        "diam_shrank": true
+      },
+      {
+        "seed": "2",
+        "step": "6 -> 7",
+        "m_prev": 6,
+        "r1_new": 3.5984163030422116,
+        "r1_max": 8.550273564730512,
+        "r0_new": 0.23470074717023343,
+        "r0_min": 0.29324610602737333,
+        "dominated_mine": false,
+        "diam_change": 0.021261569620253207,
+        "diam_shrank": true
+      },
+      {
+        "seed": "2",
+        "step": "7 -> 8",
+        "m_prev": 7,
+        "r1_new": 3.3778574127113394,
+        "r1_max": 8.550273564730512,
+        "r0_new": 0.21213985709728536,
+        "r0_min": 0.23470074717023343,
+        "dominated_mine": false,
+        "diam_change": 0.008504627848101243,
+        "diam_shrank": true
+      },
+      {
+        "seed": "2",
+        "step": "8 -> 9",
+        "m_prev": 8,
+        "r1_new": 3.032832506695007,
+        "r1_max": 8.550273564730512,
+        "r0_new": 0.1923634433772651,
+        "r0_min": 0.21213985709728536,
+        "dominated_mine": false,
+        "diam_change": 0.004252313924050633,
+        "diam_shrank": true
+      },
+      {
+        "seed": "2",
+        "step": "9 -> 10",
+        "m_prev": 9,
+        "r1_new": 2.719881674695979,
+        "r1_max": 8.550273564730512,
+        "r0_new": 0.16700230034793154,
+        "r0_min": 0.1923634433772651,
+        "dominated_mine": false,
+        "diam_change": 0.008504627848101253,
+        "diam_shrank": true
+      },
+      {
+        "seed": "3",
+        "step": "2 -> 3",
+        "m_prev": 2,
+        "r1_new": 4.5664609792971635,
+        "r1_max": 9.39125028351675,
+        "r0_new": 0.39328579759677207,
+        "r0_min": 0.4049263045559689,
+        "dominated_mine": false,
+        "diam_change": 0.0,
+        "diam_shrank": false
+      },
+      {
+        "seed": "3",
+        "step": "3 -> 4",
+        "m_prev": 3,
+        "r1_new": 4.308206880585677,
+        "r1_max": 9.39125028351675,
+        "r0_new": 0.3543961589789028,
+        "r0_min": 0.39328579759677207,
+        "dominated_mine": false,
+        "diam_change": 0.01700925569620254,
+        "diam_shrank": true
+      },
+      {
+        "seed": "3",
+        "step": "4 -> 5",
+        "m_prev": 4,
+        "r1_new": 4.3586161207516865,
+        "r1_max": 9.39125028351675,
+        "r0_new": 0.3099843496957024,
+        "r0_min": 0.3543961589789028,
+        "dominated_mine": false,
+        "diam_change": 0.01275694177215191,
+        "diam_shrank": true
+      },
+      {
+        "seed": "3",
+        "step": "5 -> 6",
+        "m_prev": 5,
+        "r1_new": 3.726019546749869,
+        "r1_max": 9.39125028351675,
+        "r0_new": 0.27248360674468564,
+        "r0_min": 0.3099843496957024,
+        "dominated_mine": false,
+        "diam_change": 0.012756941772151874,
+        "diam_shrank": true
+      },
+      {
+        "seed": "3",
+        "step": "6 -> 7",
+        "m_prev": 6,
+        "r1_new": 3.3089197896496763,
+        "r1_max": 9.39125028351675,
+        "r0_new": 0.27421339061502215,
+        "r0_min": 0.27248360674468564,
+        "dominated_mine": true,
+        "diam_change": 0.0,
+        "diam_shrank": false
+      },
+      {
+        "seed": "3",
+        "step": "7 -> 8",
+        "m_prev": 7,
+        "r1_new": 3.3165563400519784,
+        "r1_max": 9.39125028351675,
+        "r0_new": 0.21517654124284963,
+        "r0_min": 0.27248360674468564,
+        "dominated_mine": false,
+        "diam_change": 0.021261569620253183,
+        "diam_shrank": true
+      },
+      {
+        "seed": "3",
+        "step": "8 -> 9",
+        "m_prev": 8,
+        "r1_new": 2.8888928730610606,
+        "r1_max": 9.39125028351675,
+        "r0_new": 0.1799622090006716,
+        "r0_min": 0.21517654124284963,
+        "dominated_mine": false,
+        "diam_change": 0.008504627848101243,
+        "diam_shrank": true
+      },
+      {
+        "seed": "3",
+        "step": "9 -> 10",
+        "m_prev": 9,
+        "r1_new": 2.9279854307728135,
+        "r1_max": 9.39125028351675,
+        "r0_new": 0.15571311286026218,
+        "r0_min": 0.1799622090006716,
+        "dominated_mine": false,
+        "diam_change": 0.008504627848101288,
+        "diam_shrank": true
+      },
+      {
+        "seed": "4",
+        "step": "2 -> 3",
+        "m_prev": 2,
+        "r1_new": 4.35669439790985,
+        "r1_max": 6.304486845220243,
+        "r0_new": 0.3965393739938664,
+        "r0_min": 0.4116795431908454,
+        "dominated_mine": false,
+        "diam_change": 0.004252313924050588,
+        "diam_shrank": true
+      },
+      {
+        "seed": "4",
+        "step": "3 -> 4",
+        "m_prev": 3,
+        "r1_new": 4.967819413912085,
+        "r1_max": 6.304486845220243,
+        "r0_new": 0.33666362004140077,
+        "r0_min": 0.3965393739938664,
+        "dominated_mine": false,
+        "diam_change": 0.021261569620253183,
+        "diam_shrank": true
+      },
+      {
+        "seed": "4",
+        "step": "4 -> 5",
+        "m_prev": 4,
+        "r1_new": 3.9416417368245686,
+        "r1_max": 6.304486845220243,
+        "r0_new": 0.30567193433921613,
+        "r0_min": 0.33666362004140077,
+        "dominated_mine": false,
+        "diam_change": 0.008504627848101265,
+        "diam_shrank": true
+      },
+      {
+        "seed": "4",
+        "step": "5 -> 6",
+        "m_prev": 5,
+        "r1_new": 3.653944428022459,
+        "r1_max": 6.304486845220243,
+        "r0_new": 0.3013417521156289,
+        "r0_min": 0.30567193433921613,
+        "dominated_mine": false,
+        "diam_change": 0.00425231392405061,
+        "diam_shrank": true
+      },
+      {
+        "seed": "4",
+        "step": "6 -> 7",
+        "m_prev": 6,
+        "r1_new": 3.2480567684282224,
+        "r1_max": 6.304486845220243,
+        "r0_new": 0.2423276922879784,
+        "r0_min": 0.3013417521156289,
+        "dominated_mine": false,
+        "diam_change": 0.01700925569620255,
+        "diam_shrank": true
+      },
+      {
+        "seed": "4",
+        "step": "7 -> 8",
+        "m_prev": 7,
+        "r1_new": 3.353052769274842,
+        "r1_max": 6.304486845220243,
+        "r0_new": 0.2003150885225729,
+        "r0_min": 0.2423276922879784,
+        "dominated_mine": false,
+        "diam_change": 0.01700925569620253,
+        "diam_shrank": true
+      },
+      {
+        "seed": "4",
+        "step": "8 -> 9",
+        "m_prev": 8,
+        "r1_new": 2.770207166268523,
+        "r1_max": 6.304486845220243,
+        "r0_new": 0.21136941961036615,
+        "r0_min": 0.2003150885225729,
+        "dominated_mine": true,
+        "diam_change": 0.0,
+        "diam_shrank": false
+      },
+      {
+        "seed": "4",
+        "step": "9 -> 10",
+        "m_prev": 9,
+        "r1_new": 2.810668363981195,
+        "r1_max": 6.304486845220243,
+        "r0_new": 0.14102029484983744,
+        "r0_min": 0.2003150885225729,
+        "dominated_mine": false,
+        "diam_change": 0.015743686075949382,
+        "diam_shrank": true
+      }
+    ],
+    "n_dominated": 3,
+    "n_nondominated": 37,
+    "dominated_steps": [
+      [
+        "0",
+        "3 -> 4"
+      ],
+      [
+        "3",
+        "6 -> 7"
+      ],
+      [
+        "4",
+        "8 -> 9"
+      ]
+    ],
+    "violations_dominated_implies_no_shrink": 0,
+    "nd_diam_unchanged": [
+      [
+        "0",
+        "5 -> 6"
+      ],
+      [
+        "3",
+        "2 -> 3"
+      ]
+    ]
+  },
+  "part2_n_removed_dominated_steps": {
+    "seed3_step6to7": {
+      "n_prev": 1994,
+      "n_curr": 1994,
+      "n_removed": 0,
+      "n_added": 0,
+      "n_grid": 200
+    },
+    "seed4_step8to9": {
+      "n_prev": 2206,
+      "n_curr": 2206,
+      "n_removed": 0,
+      "n_added": 0,
+      "n_grid": 200
+    },
+    "seed3_step2to3": {
+      "n_prev": 2756,
+      "n_curr": 2694,
+      "n_removed": 62,
+      "n_added": 0,
+      "n_grid": 200
+    }
+  },
+  "part3_n_removed_seed3_2to3": {
+    "n_prev": 2756,
+    "n_curr": 2694,
+    "n_removed": 62,
+    "n_added": 0,
+    "n_grid": 200
+  },
+  "crosscheck_vs_analytic": {
+    "dominated_sets_match": true,
+    "analytic_dominated": [
+      [
+        "0",
+        "3 -> 4"
+      ],
+      [
+        "3",
+        "6 -> 7"
+      ],
+      [
+        "4",
+        "8 -> 9"
+      ]
+    ],
+    "mine_dominated": [
+      [
+        "0",
+        "3 -> 4"
+      ],
+      [
+        "3",
+        "6 -> 7"
+      ],
+      [
+        "4",
+        "8 -> 9"
+      ]
+    ],
+    "violations_mine": 0,
+    "violations_analytic": 0,
+    "zero_violations_agree": true
+  },
+  "verdict": {
+    "check1_seed3_67": "seed3 6->7: n_removed=0. Theory predicts 0. CONFIRMED",
+    "check1_seed4_89": "seed4 8->9: n_removed=0. Theory predicts 0. CONFIRMED",
+    "check2_seed3_23": "seed3 2->3: n_removed=62. Non-dominated. If > 0: G~ shrinks (diam unchanged = layer-2 separation, consistent with §2.5). If = 0: prototype constraint case (F2(c)).",
+    "check3_lr_criterion": "LR criterion: 3 dominated steps identified, exact match with the analytic derivation: True. Zero violations of 'dominated => no shrink': True."
+  }
+}

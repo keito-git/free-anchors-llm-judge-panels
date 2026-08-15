@@ -1,0 +1,23 @@
+{
+ "env": {
+  "script": "e22_exact_m0_linear_program.py",
+  "method": "exact: 16K linear programs (HiGHS)",
+  "prototypes": "gold-conditioned mean, L=4 (identical to E2c)",
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "exact_m0_diameter": 1.9296153555505233,
+ "argmax_prototype": 0,
+ "argmax_sign_vector": [
+  -1.0,
+  -1.0,
+  -1.0,
+  1.0
+ ],
+ "sampled_m0": 1.6522373673184734,
+ "local_search_m0": 1.929614528,
+ "sampled_shortfall_pct": 14.37478134873742,
+ "local_search_shortfall_pct": 4.288681269004613e-05,
+ "reading": "G_m is contained in G_0, so this value is a rigorous upper bound on every diameter reported in the paper."
+}

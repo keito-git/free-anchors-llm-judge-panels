@@ -1,0 +1,84 @@
+{
+ "env": {
+  "script": "e31_second_panel_vertex_coverage.py",
+  "panel": "TREC-COVID, nine judges, seven families",
+  "n_items": 294,
+  "L": 3,
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "distance_to_each_vertex": {
+  "label_0": 0.0,
+  "label_1": 0.0,
+  "label_2": 0.0
+ },
+ "pool_slices": {
+  "top_5pct": {
+   "n_items": 14,
+   "max_l1_distance_to_own_vertex": 0.0,
+   "min_distance_per_vertex": {
+    "label_0": 0.0,
+    "label_1": 0.0,
+    "label_2": 0.0
+   },
+   "items_per_dominant_label": {
+    "0": 6,
+    "1": 6,
+    "2": 2
+   },
+   "gold_per_dominant_label": {
+    "0": 6,
+    "1": 4,
+    "2": 4
+   }
+  },
+  "top_10pct": {
+   "n_items": 29,
+   "max_l1_distance_to_own_vertex": 0.0,
+   "min_distance_per_vertex": {
+    "label_0": 0.0,
+    "label_1": 0.0,
+    "label_2": 0.0
+   },
+   "items_per_dominant_label": {
+    "0": 14,
+    "1": 7,
+    "2": 8
+   },
+   "gold_per_dominant_label": {
+    "0": 13,
+    "1": 7,
+    "2": 9
+   }
+  },
+  "top_20pct": {
+   "n_items": 58,
+   "max_l1_distance_to_own_vertex": 0.0,
+   "min_distance_per_vertex": {
+    "label_0": 0.0,
+    "label_1": 0.0,
+    "label_2": 0.0
+   },
+   "items_per_dominant_label": {
+    "0": 30,
+    "1": 13,
+    "2": 15
+   },
+   "gold_per_dominant_label": {
+    "0": 28,
+    "1": 14,
+    "2": 16
+   }
+  }
+ },
+ "summary": {
+  "vertices_within_0.10_by_slice": {
+   "top_5pct": 3,
+   "top_10pct": 3,
+   "top_20pct": 3
+  },
+  "all_vertices_covered_in_any_slice": true,
+  "reading": "Theorem 4 needs a near-vertex item for every label; the count above says how many labels the free pool actually reaches."
+ }
+}

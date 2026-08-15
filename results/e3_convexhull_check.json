@@ -1,0 +1,756 @@
+{
+  "per_seed": {
+    "0": {
+      "kernels": [
+        {
+          "alpha": 0.08547846749285817,
+          "beta": 0.6126341421648612
+        },
+        {
+          "alpha": 0.09745813521722146,
+          "beta": 0.6134428733401392
+        },
+        {
+          "alpha": 0.11497227429078112,
+          "beta": 0.6809628377301694
+        },
+        {
+          "alpha": 0.14066110542114113,
+          "beta": 0.6813434230122185
+        },
+        {
+          "alpha": 0.19919747623467754,
+          "beta": 0.7425195511905311
+        },
+        {
+          "alpha": 0.22984355642444218,
+          "beta": 0.753692891490769
+        },
+        {
+          "alpha": 0.24426543103068718,
+          "beta": 0.8145271568939955
+        },
+        {
+          "alpha": 0.2758465291060266,
+          "beta": 0.8349917821432971
+        },
+        {
+          "alpha": 0.29507833299195024,
+          "beta": 0.8586551422881621
+        },
+        {
+          "alpha": 0.3374028969515107,
+          "beta": 0.8969074888479064
+        }
+      ],
+      "steps": [
+        {
+          "step": "2 -> 3",
+          "m_prev": 2,
+          "m_curr": 3,
+          "new_kernel_alpha": 0.11497227429078112,
+          "new_kernel_beta": 0.6809628377301694,
+          "existing_hull_size": 2,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.021261569620253162,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "3 -> 4",
+          "m_prev": 3,
+          "m_curr": 4,
+          "new_kernel_alpha": 0.14066110542114113,
+          "new_kernel_beta": 0.6813434230122185,
+          "existing_hull_size": 3,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.0,
+          "diameter_shrank": false,
+          "prediction_matches": false
+        },
+        {
+          "step": "4 -> 5",
+          "m_prev": 4,
+          "m_curr": 5,
+          "new_kernel_alpha": 0.19919747623467754,
+          "new_kernel_beta": 0.7425195511905311,
+          "existing_hull_size": 4,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.012756941772151942,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "5 -> 6",
+          "m_prev": 5,
+          "m_curr": 6,
+          "new_kernel_alpha": 0.22984355642444218,
+          "new_kernel_beta": 0.753692891490769,
+          "existing_hull_size": 5,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.0,
+          "diameter_shrank": false,
+          "prediction_matches": false
+        },
+        {
+          "step": "6 -> 7",
+          "m_prev": 6,
+          "m_curr": 7,
+          "new_kernel_alpha": 0.24426543103068718,
+          "new_kernel_beta": 0.8145271568939955,
+          "existing_hull_size": 6,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.025513883544303773,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "7 -> 8",
+          "m_prev": 7,
+          "m_curr": 8,
+          "new_kernel_alpha": 0.2758465291060266,
+          "new_kernel_beta": 0.8349917821432971,
+          "existing_hull_size": 7,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.008504627848101265,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "8 -> 9",
+          "m_prev": 8,
+          "m_curr": 9,
+          "new_kernel_alpha": 0.29507833299195024,
+          "new_kernel_beta": 0.8586551422881621,
+          "existing_hull_size": 8,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.008504627848101265,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "9 -> 10",
+          "m_prev": 9,
+          "m_curr": 10,
+          "new_kernel_alpha": 0.3374028969515107,
+          "new_kernel_beta": 0.8969074888479064,
+          "existing_hull_size": 9,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.012756941772151897,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        }
+      ],
+      "all_outside_hull": true,
+      "all_predictions_match": false
+    },
+    "1": {
+      "kernels": [
+        {
+          "alpha": 0.08047286498801026,
+          "beta": 0.6101405243469923
+        },
+        {
+          "alpha": 0.12468521451970407,
+          "beta": 0.6348590658621044
+        },
+        {
+          "alpha": 0.11909971784211867,
+          "beta": 0.6598559353266303
+        },
+        {
+          "alpha": 0.17794597788548974,
+          "beta": 0.7115371481371361
+        },
+        {
+          "alpha": 0.17913992474708607,
+          "beta": 0.7254611265049992
+        },
+        {
+          "alpha": 0.21026639129223634,
+          "beta": 0.7648065822458927
+        },
+        {
+          "alpha": 0.25310810375281767,
+          "beta": 0.7853616678898866
+        },
+        {
+          "alpha": 0.26303463212143313,
+          "beta": 0.8294578527912185
+        },
+        {
+          "alpha": 0.2953170808402557,
+          "beta": 0.8548048762937127
+        },
+        {
+          "alpha": 0.3011023645297227,
+          "beta": 0.890492533617674
+        }
+      ],
+      "steps": [
+        {
+          "step": "2 -> 3",
+          "m_prev": 2,
+          "m_curr": 3,
+          "new_kernel_alpha": 0.11909971784211867,
+          "new_kernel_beta": 0.6598559353266303,
+          "existing_hull_size": 2,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.008504627848101243,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "3 -> 4",
+          "m_prev": 3,
+          "m_curr": 4,
+          "new_kernel_alpha": 0.17794597788548974,
+          "new_kernel_beta": 0.7115371481371361,
+          "existing_hull_size": 3,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.012756941772151887,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "4 -> 5",
+          "m_prev": 4,
+          "m_curr": 5,
+          "new_kernel_alpha": 0.17913992474708607,
+          "new_kernel_beta": 0.7254611265049992,
+          "existing_hull_size": 4,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.004252313924050644,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "5 -> 6",
+          "m_prev": 5,
+          "m_curr": 6,
+          "new_kernel_alpha": 0.21026639129223634,
+          "new_kernel_beta": 0.7648065822458927,
+          "existing_hull_size": 5,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.012756941772151874,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "6 -> 7",
+          "m_prev": 6,
+          "m_curr": 7,
+          "new_kernel_alpha": 0.25310810375281767,
+          "new_kernel_beta": 0.7853616678898866,
+          "existing_hull_size": 6,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.004252313924050633,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "7 -> 8",
+          "m_prev": 7,
+          "m_curr": 8,
+          "new_kernel_alpha": 0.26303463212143313,
+          "new_kernel_beta": 0.8294578527912185,
+          "existing_hull_size": 7,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.017009255696202576,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "8 -> 9",
+          "m_prev": 8,
+          "m_curr": 9,
+          "new_kernel_alpha": 0.2953170808402557,
+          "new_kernel_beta": 0.8548048762937127,
+          "existing_hull_size": 8,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.008504627848101243,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "9 -> 10",
+          "m_prev": 9,
+          "m_curr": 10,
+          "new_kernel_alpha": 0.3011023645297227,
+          "new_kernel_beta": 0.890492533617674,
+          "existing_hull_size": 9,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.01700925569620253,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        }
+      ],
+      "all_outside_hull": true,
+      "all_predictions_match": true
+    },
+    "2": {
+      "kernels": [
+        {
+          "alpha": 0.07046448536997266,
+          "beta": 0.6024906265112171
+        },
+        {
+          "alpha": 0.09860631240323159,
+          "beta": 0.6193358238655468
+        },
+        {
+          "alpha": 0.14590236295710454,
+          "beta": 0.6639718982988582
+        },
+        {
+          "alpha": 0.14367663768540384,
+          "beta": 0.7067718919429807
+        },
+        {
+          "alpha": 0.1906706877052928,
+          "beta": 0.7302447202641386
+        },
+        {
+          "alpha": 0.2224757544058051,
+          "beta": 0.7719940426376313
+        },
+        {
+          "alpha": 0.22751604293466413,
+          "beta": 0.8186974380997472
+        },
+        {
+          "alpha": 0.24887253175998938,
+          "beta": 0.8406559262257184
+        },
+        {
+          "alpha": 0.28433210804957487,
+          "beta": 0.8623316599898677
+        },
+        {
+          "alpha": 0.3262973205950237,
+          "beta": 0.8874901027888039
+        }
+      ],
+      "steps": [
+        {
+          "step": "2 -> 3",
+          "m_prev": 2,
+          "m_curr": 3,
+          "new_kernel_alpha": 0.14590236295710454,
+          "new_kernel_beta": 0.6639718982988582,
+          "existing_hull_size": 2,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.008504627848101265,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "3 -> 4",
+          "m_prev": 3,
+          "m_curr": 4,
+          "new_kernel_alpha": 0.14367663768540384,
+          "new_kernel_beta": 0.7067718919429807,
+          "existing_hull_size": 3,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.01700925569620254,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "4 -> 5",
+          "m_prev": 4,
+          "m_curr": 5,
+          "new_kernel_alpha": 0.1906706877052928,
+          "new_kernel_beta": 0.7302447202641386,
+          "existing_hull_size": 4,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.004252313924050644,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "5 -> 6",
+          "m_prev": 5,
+          "m_curr": 6,
+          "new_kernel_alpha": 0.2224757544058051,
+          "new_kernel_beta": 0.7719940426376313,
+          "existing_hull_size": 5,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.012756941772151874,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "6 -> 7",
+          "m_prev": 6,
+          "m_curr": 7,
+          "new_kernel_alpha": 0.22751604293466413,
+          "new_kernel_beta": 0.8186974380997472,
+          "existing_hull_size": 6,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.021261569620253207,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "7 -> 8",
+          "m_prev": 7,
+          "m_curr": 8,
+          "new_kernel_alpha": 0.24887253175998938,
+          "new_kernel_beta": 0.8406559262257184,
+          "existing_hull_size": 7,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.008504627848101243,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "8 -> 9",
+          "m_prev": 8,
+          "m_curr": 9,
+          "new_kernel_alpha": 0.28433210804957487,
+          "new_kernel_beta": 0.8623316599898677,
+          "existing_hull_size": 8,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.004252313924050633,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "9 -> 10",
+          "m_prev": 9,
+          "m_curr": 10,
+          "new_kernel_alpha": 0.3262973205950237,
+          "new_kernel_beta": 0.8874901027888039,
+          "existing_hull_size": 9,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.008504627848101253,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        }
+      ],
+      "all_outside_hull": true,
+      "all_predictions_match": true
+    },
+    "3": {
+      "kernels": [
+        {
+          "alpha": 0.06342596668574497,
+          "beta": 0.5956491276198265
+        },
+        {
+          "alpha": 0.09613908693051065,
+          "beta": 0.6340029406381879
+        },
+        {
+          "alpha": 0.1453843119415892,
+          "beta": 0.6638917874832337
+        },
+        {
+          "alpha": 0.16328648144257468,
+          "beta": 0.7034719428575256
+        },
+        {
+          "alpha": 0.1704318123562826,
+          "beta": 0.7428468448250198
+        },
+        {
+          "alpha": 0.21065841094279228,
+          "beta": 0.7849173568601105
+        },
+        {
+          "alpha": 0.23916205192563336,
+          "beta": 0.7913680465499517
+        },
+        {
+          "alpha": 0.2530562232521498,
+          "beta": 0.8392752216165263
+        },
+        {
+          "alpha": 0.3027164193897019,
+          "beta": 0.8745153065334729
+        },
+        {
+          "alpha": 0.30454688079685616,
+          "beta": 0.8917088299604995
+        }
+      ],
+      "steps": [
+        {
+          "step": "2 -> 3",
+          "m_prev": 2,
+          "m_curr": 3,
+          "new_kernel_alpha": 0.1453843119415892,
+          "new_kernel_beta": 0.6638917874832337,
+          "existing_hull_size": 2,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.0,
+          "diameter_shrank": false,
+          "prediction_matches": false
+        },
+        {
+          "step": "3 -> 4",
+          "m_prev": 3,
+          "m_curr": 4,
+          "new_kernel_alpha": 0.16328648144257468,
+          "new_kernel_beta": 0.7034719428575256,
+          "existing_hull_size": 3,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.01700925569620254,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "4 -> 5",
+          "m_prev": 4,
+          "m_curr": 5,
+          "new_kernel_alpha": 0.1704318123562826,
+          "new_kernel_beta": 0.7428468448250198,
+          "existing_hull_size": 4,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.01275694177215191,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "5 -> 6",
+          "m_prev": 5,
+          "m_curr": 6,
+          "new_kernel_alpha": 0.21065841094279228,
+          "new_kernel_beta": 0.7849173568601105,
+          "existing_hull_size": 5,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.012756941772151874,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "6 -> 7",
+          "m_prev": 6,
+          "m_curr": 7,
+          "new_kernel_alpha": 0.23916205192563336,
+          "new_kernel_beta": 0.7913680465499517,
+          "existing_hull_size": 6,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.0,
+          "diameter_shrank": false,
+          "prediction_matches": false
+        },
+        {
+          "step": "7 -> 8",
+          "m_prev": 7,
+          "m_curr": 8,
+          "new_kernel_alpha": 0.2530562232521498,
+          "new_kernel_beta": 0.8392752216165263,
+          "existing_hull_size": 7,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.021261569620253183,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "8 -> 9",
+          "m_prev": 8,
+          "m_curr": 9,
+          "new_kernel_alpha": 0.3027164193897019,
+          "new_kernel_beta": 0.8745153065334729,
+          "existing_hull_size": 8,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.008504627848101243,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "9 -> 10",
+          "m_prev": 9,
+          "m_curr": 10,
+          "new_kernel_alpha": 0.30454688079685616,
+          "new_kernel_beta": 0.8917088299604995,
+          "existing_hull_size": 9,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.008504627848101288,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        }
+      ],
+      "all_outside_hull": true,
+      "all_predictions_match": false
+    },
+    "4": {
+      "kernels": [
+        {
+          "alpha": 0.0977222442228947,
+          "beta": 0.6160886031886396
+        },
+        {
+          "alpha": 0.10711976877924112,
+          "beta": 0.6324194742869016
+        },
+        {
+          "alpha": 0.1523830815616415,
+          "beta": 0.6638865177758432
+        },
+        {
+          "alpha": 0.14323344095582408,
+          "beta": 0.7115578687017732
+        },
+        {
+          "alpha": 0.19096089994646784,
+          "beta": 0.7526994533305782
+        },
+        {
+          "alpha": 0.20839279670842423,
+          "beta": 0.7614556983727637
+        },
+        {
+          "alpha": 0.2520760482794323,
+          "beta": 0.8187573147726495
+        },
+        {
+          "alpha": 0.2536477793124278,
+          "beta": 0.8504943888439501
+        },
+        {
+          "alpha": 0.3081987443008396,
+          "beta": 0.853774370097146
+        },
+        {
+          "alpha": 0.32175765603053996,
+          "beta": 0.9043540646737819
+        }
+      ],
+      "steps": [
+        {
+          "step": "2 -> 3",
+          "m_prev": 2,
+          "m_curr": 3,
+          "new_kernel_alpha": 0.1523830815616415,
+          "new_kernel_beta": 0.6638865177758432,
+          "existing_hull_size": 2,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.004252313924050588,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "3 -> 4",
+          "m_prev": 3,
+          "m_curr": 4,
+          "new_kernel_alpha": 0.14323344095582408,
+          "new_kernel_beta": 0.7115578687017732,
+          "existing_hull_size": 3,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.021261569620253183,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "4 -> 5",
+          "m_prev": 4,
+          "m_curr": 5,
+          "new_kernel_alpha": 0.19096089994646784,
+          "new_kernel_beta": 0.7526994533305782,
+          "existing_hull_size": 4,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.008504627848101265,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "5 -> 6",
+          "m_prev": 5,
+          "m_curr": 6,
+          "new_kernel_alpha": 0.20839279670842423,
+          "new_kernel_beta": 0.7614556983727637,
+          "existing_hull_size": 5,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.00425231392405061,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "6 -> 7",
+          "m_prev": 6,
+          "m_curr": 7,
+          "new_kernel_alpha": 0.2520760482794323,
+          "new_kernel_beta": 0.8187573147726495,
+          "existing_hull_size": 6,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.01700925569620255,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "7 -> 8",
+          "m_prev": 7,
+          "m_curr": 8,
+          "new_kernel_alpha": 0.2536477793124278,
+          "new_kernel_beta": 0.8504943888439501,
+          "existing_hull_size": 7,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.01700925569620253,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        },
+        {
+          "step": "8 -> 9",
+          "m_prev": 8,
+          "m_curr": 9,
+          "new_kernel_alpha": 0.3081987443008396,
+          "new_kernel_beta": 0.853774370097146,
+          "existing_hull_size": 8,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.0,
+          "diameter_shrank": false,
+          "prediction_matches": false
+        },
+        {
+          "step": "9 -> 10",
+          "m_prev": 9,
+          "m_curr": 10,
+          "new_kernel_alpha": 0.32175765603053996,
+          "new_kernel_beta": 0.9043540646737819,
+          "existing_hull_size": 9,
+          "new_kernel_outside_hull": true,
+          "mean_diam_change": 0.015743686075949382,
+          "diameter_shrank": true,
+          "prediction_matches": true
+        }
+      ],
+      "all_outside_hull": true,
+      "all_predictions_match": false
+    }
+  },
+  "aggregate": {
+    "n_steps_total": 40,
+    "n_outside_hull": 40,
+    "n_inside_hull": 0,
+    "n_predictions_match": 35,
+    "pct_outside_hull": 100.0,
+    "pct_predictions_match": 87.5
+  },
+  "verdict": "All kernel additions are OUTSIDE the convex hull of previous kernels (40/40 steps). This confirms default_kernels generates an expanding sequence, consistent with monotone gauge shrinkage observed in M2. The condition for Corollary 1(i) is satisfied in E3's experimental setup. However, this means E3 does NOT test the 'inside-hull -> no shrinkage' case. A dedicated inside-hull test would be needed to fully verify Corollary 1(i).",
+  "elapsed_seconds": 2.51,
+  "supplementary_analysis": {
+    "step3_to_4_seed0": {
+      "finding": "ZERO gauge transforms removed despite new kernel being outside (alpha,beta) hull.",
+      "new_kernel": {
+        "alpha": 0.1407,
+        "beta": 0.6813
+      },
+      "n_valid_prev_m3": 3244,
+      "n_valid_curr_m4": 3244,
+      "n_removed": 0,
+      "interpretation": "Kernel_3 (alpha=0.1407, beta=0.6813) is outside the convex hull of {kernel_0, kernel_1, kernel_2} in (alpha,beta) parameter space, but its gauge constraint C_f3 @ A^{-1} >= 0 is entirely dominated by the combined constraints of the three existing kernels in (a,b) space. This means G_4 = G_3 (strict equality) despite the outside-hull condition.",
+      "theory_implication": "Outside convex hull in (alpha,beta) parameter space is NECESSARY but NOT SUFFICIENT for strict gauge set shrinkage. The constraint in (a,b) space may be redundant even when the parameter is outside the hull. Corollary 1(i) (strong form: outside-hull => strict shrinkage) needs revision. Weak form (G_m+1 subseteq G_m, monotone non-increasing) holds and is not refuted.",
+      "grid_n": 200,
+      "confirmed_not_grid_artifact": true
+    },
+    "step5_to_6_seed0": {
+      "finding": "14 gauge transforms removed (gauge set strictly shrinks) but diameter unchanged at tested pi values.",
+      "n_removed": 14,
+      "interpretation": "The 14 removed transforms are not on the diameter-achieving orbit for representative pi values. Gauge set G_6 ⊊ G_5 (strict subset), but the diameter (max|pi'-pi|) does not decrease because the removed transforms are not the ones achieving the maximum displacement."
+    },
+    "overall_interpretation": "E3's experimental setup (default_kernels, linspace-based) has all kernel additions outside the (alpha,beta) hull, but 2/8 steps per seed (on average) do not cause gauge set shrinkage. This is because (alpha,beta)-hull membership does not directly control (a,b)-constraint binding. The key theoretical guarantee — that G_m is monotone non-increasing in m — is CONFIRMED. The stronger claim that each outside-hull addition strictly reduces the gauge is REFUTED by step 3->4 (seed=0, 0 transforms removed). Reporting to the analytic derivation for theory revision."
+  }
+}

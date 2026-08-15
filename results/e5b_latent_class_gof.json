@@ -1,0 +1,94 @@
+{
+ "env": {
+  "script": "e5b_latent_class_gof.py",
+  "n_items": 4423,
+  "n_judges": 33,
+  "K_grid": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   8
+  ],
+  "n_sim_per_K": 120,
+  "seed": 20260804,
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "per_K": {
+  "2": {
+   "loglik": -138406.9801322075,
+   "observed_cross_residual_corr": 0.1968939142768044,
+   "reference_mean": 9.855754512492782e-06,
+   "reference_ci95": [
+    -0.0019019182178955437,
+    0.0016045064508323707
+   ],
+   "inside_reference_band": false,
+   "excess_over_reference": 0.1968840585222919
+  },
+  "3": {
+   "loglik": -129400.80685998051,
+   "observed_cross_residual_corr": 0.06040096768087742,
+   "reference_mean": 0.006089664408564463,
+   "reference_ci95": [
+    -0.0019437747198230947,
+    0.18683569216702173
+   ],
+   "inside_reference_band": true,
+   "excess_over_reference": 0.054311303272312955
+  },
+  "4": {
+   "loglik": -125127.64904920684,
+   "observed_cross_residual_corr": 0.0264526375122779,
+   "reference_mean": 0.004938077355969696,
+   "reference_ci95": [
+    -0.0024277731998841663,
+    0.02066465543824277
+   ],
+   "inside_reference_band": false,
+   "excess_over_reference": 0.021514560156308205
+  },
+  "5": {
+   "loglik": -123072.7803910912,
+   "observed_cross_residual_corr": -0.013302526692260846,
+   "reference_mean": 0.001254883024635001,
+   "reference_ci95": [
+    -0.004979213073060915,
+    0.04715211158167918
+   ],
+   "inside_reference_band": false,
+   "excess_over_reference": -0.014557409716895847
+  },
+  "6": {
+   "loglik": -121548.87683924375,
+   "observed_cross_residual_corr": 0.012502496746212451,
+   "reference_mean": -0.0003007523593770348,
+   "reference_ci95": [
+    -0.020282182420464843,
+    0.05562313328134803
+   ],
+   "inside_reference_band": true,
+   "excess_over_reference": 0.012803249105589486
+  },
+  "8": {
+   "loglik": -120000.91832003684,
+   "observed_cross_residual_corr": -0.006245594860451433,
+   "reference_mean": -0.0025442445457998283,
+   "reference_ci95": [
+    -0.014091369941774687,
+    0.005650013834743635
+   ],
+   "inside_reference_band": true,
+   "excess_over_reference": -0.003701350314651605
+  }
+ },
+ "verdict": {
+  "any_K_consistent_with_model": true,
+  "min_excess": -0.014557409716895847,
+  "argmin_K": "5",
+  "reading": "If no K puts the observed statistic inside the reference band, the between-family conditional independence assumption fails on this panel and the radius invariance in E2c cannot be read as evidence for Theorem 3."
+ }
+}

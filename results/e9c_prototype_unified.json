@@ -1,0 +1,51 @@
+{
+ "env": {
+  "script": "e9c_prototype_unified.py",
+  "seeds": [
+   42,
+   123,
+   456,
+   789,
+   1024,
+   20260804
+  ],
+  "n_dirs_per_seed": 4000,
+  "estimator": "pooled max over 6 seeds x 4000 dirs",
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "gold_mean": {
+  "m=0": 1.6522373673184734,
+  "n_directions": 24000,
+  "m=1": 1.1644178813105488,
+  "m=2": 1.1644178813105488,
+  "m=3": 1.1644178813105488,
+  "eta": 0.035192322224741494,
+  "floor_2eta": 0.07038464444948299,
+  "flat_from_m1": true,
+  "kernels_bind": true
+ },
+ "gold_trimmed_mean": {
+  "m=0": 1.8405591645499073,
+  "n_directions": 24000,
+  "m=1": 1.0847677909822904,
+  "m=2": 1.0847677909822904,
+  "m=3": 1.0847677909822904,
+  "eta": 0.011390091390091367,
+  "floor_2eta": 0.022780182780182734,
+  "flat_from_m1": true,
+  "kernels_bind": true
+ },
+ "em_latent_K4": {
+  "m=0": 1.9345286669733275,
+  "n_directions": 24000,
+  "m=1": 1.1120504429795635,
+  "m=2": 1.1120504429795635,
+  "m=3": 1.1120504429795635,
+  "eta": 0.005354579583691182,
+  "floor_2eta": 0.010709159167382364,
+  "flat_from_m1": true,
+  "kernels_bind": true
+ }
+}

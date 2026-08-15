@@ -1,0 +1,48 @@
+{
+ "env": {
+  "script": "e21_e12_optimised.py",
+  "seeds": [
+   42,
+   123,
+   456,
+   789,
+   1024,
+   20260804
+  ],
+  "n_dirs_per_seed": 3000,
+  "optimiser": "Nelder-Mead, 10 starts, maxiter 700",
+  "pool": "identical construction, seeds and kernels to E12",
+  "note": "optimised values are lower bounds (local search)",
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "rows": [
+  {
+   "anchor_fraction": 0.0,
+   "n_anchor_items": 0,
+   "n_prototypes": 400,
+   "sampled": 0.7196474426601712,
+   "optimised": 1.1009315197808447
+  },
+  {
+   "anchor_fraction": 0.005,
+   "n_anchor_items": 2,
+   "n_prototypes": 402,
+   "sampled": 0.36744441820006835,
+   "optimised": 0.9908980539585335
+  },
+  {
+   "anchor_fraction": 0.2,
+   "n_anchor_items": 80,
+   "n_prototypes": 480,
+   "sampled": 0.36744441820006835,
+   "optimised": 0.9908980539585335
+  }
+ ],
+ "summary": {
+  "sampled_reduction_factor_2_anchors": 1.9585205462784667,
+  "optimised_reduction_factor_2_anchors": 1.1110441839932363,
+  "sampled_matches_e12_baseline": true
+ }
+}

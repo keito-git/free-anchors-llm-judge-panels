@@ -1,0 +1,68 @@
+{
+ "env": {
+  "script": "e30_second_panel_anchors.py",
+  "panel": "TREC-COVID, nine judges, seven families",
+  "n_items": 294,
+  "L": 3,
+  "n_base_prototypes": 120,
+  "near_vertex_pool": 29,
+  "near_vertex_max_l1": 0.0,
+  "seeds": [
+   42,
+   123,
+   456,
+   789,
+   1024,
+   20260804
+  ],
+  "n_dirs_per_seed": 3000,
+  "estimator": "optimised, 16 starts, maxiter 1000",
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "sweep": [
+  {
+   "anchor_fraction": 0.0,
+   "n_anchor_items": 0,
+   "n_prototypes": 120,
+   "eta": 0.0,
+   "diameter": 0.8895170851044711
+  },
+  {
+   "anchor_fraction": 0.005,
+   "n_anchor_items": 1,
+   "n_prototypes": 121,
+   "eta": 0.0,
+   "diameter": 0.8896278402621609
+  },
+  {
+   "anchor_fraction": 0.02,
+   "n_anchor_items": 2,
+   "n_prototypes": 122,
+   "eta": 0.0,
+   "diameter": 0.8450615032113775
+  },
+  {
+   "anchor_fraction": 0.1,
+   "n_anchor_items": 12,
+   "n_prototypes": 132,
+   "eta": 0.0,
+   "diameter": 0.9597252990706906
+  },
+  {
+   "anchor_fraction": 0.2,
+   "n_anchor_items": 24,
+   "n_prototypes": 144,
+   "eta": 0.0,
+   "diameter": 0.9597252990706906
+  }
+ ],
+ "summary": {
+  "diameter_no_anchor": 0.8895170851044711,
+  "diameter_first_injection": 0.8896278402621609,
+  "reduction_pct_first_injection": -0.012451155750059506,
+  "reduction_pct_largest": -7.892846033190448,
+  "monotone_non_increasing": false
+ }
+}

@@ -1,0 +1,279 @@
+{
+  "NISTRetrieval-instruct0": {
+    "family": "Llama",
+    "model": "Llama-3-Instruct 8B",
+    "evidence": "arXiv:2502.13908 Table 2 (Rahmani et al., 2025, 'Judging the Judges'): 'NISTRetrieval-instruct0 | Llama-3-Instruct | 8B | - | Zero-shot'",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "Zero-shot"
+  },
+  "NISTRetrieval-instruct1": {
+    "family": "Llama",
+    "model": "Llama-3-Instruct 8B",
+    "evidence": "arXiv:2502.13908 Table 2: 'NISTRetrieval-instruct1 | Llama-3-Instruct | 8B | - | Zero-shot'",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "Zero-shot"
+  },
+  "NISTRetrieval-instruct2": {
+    "family": "Llama",
+    "model": "Llama-3-Instruct 8B",
+    "evidence": "arXiv:2502.13908 Table 2: 'NISTRetrieval-instruct2 | Llama-3-Instruct | 8B | - | Zero-shot'",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "Zero-shot"
+  },
+  "NISTRetrieval-reason0": {
+    "family": "Llama",
+    "model": "Llama-3-Instruct 8B",
+    "evidence": "arXiv:2502.13908 Table 2: 'NISTRetrieval-reason0 | Llama-3-Instruct | 8B | - | CoT'",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "CoT"
+  },
+  "NISTRetrieval-reason1": {
+    "family": "Llama",
+    "model": "Llama-3-Instruct 8B",
+    "evidence": "arXiv:2502.13908 Table 2: 'NISTRetrieval-reason1 | Llama-3-Instruct | 8B | - | CoT'",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "CoT"
+  },
+  "NISTRetrieval-reason2": {
+    "family": "Llama",
+    "model": "Llama-3-Instruct 8B",
+    "evidence": "arXiv:2502.13908 Table 2: 'NISTRetrieval-reason2 | Llama-3-Instruct | 8B | - | CoT'",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "CoT"
+  },
+  "Olz-exp": {
+    "family": "GPT",
+    "model": "GPT-4o",
+    "evidence": "confirmed against the submission file",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "Zero-Shot"
+  },
+  "Olz-gpt4o": {
+    "family": "GPT",
+    "model": "GPT-4o",
+    "evidence": "confirmed against the submission file",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "CoT"
+  },
+  "Olz-halfbin": {
+    "family": "Llama",
+    "model": "Llama-3-Instruct 8B",
+    "evidence": "confirmed against the submission file",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "CoT"
+  },
+  "Olz-somebin": {
+    "family": "Llama",
+    "model": "Llama-3-Instruct 8B",
+    "evidence": "arXiv:2502.13908 Table 2: 'Olz-somebin | Llama-3-Instruct | 8B | - | CoT | S+N | LR'",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "CoT"
+  },
+  "Olz-multiprompt": {
+    "family": "Llama",
+    "model": "Llama-3-Instruct 8B",
+    "evidence": "arXiv:2502.13908 Table 2: 'Olz-multiprompt | Llama-3-Instruct | 8B | - | CoT | S+N | ensemble'",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "CoT"
+  },
+  "RMITIR-GPT4o": {
+    "family": "GPT",
+    "model": "GPT-4o",
+    "evidence": "confirmed against the submission file",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "Zero-Shot"
+  },
+  "RMITIR-llama38b": {
+    "family": "Llama",
+    "model": "Llama-3-Instruct 8B",
+    "evidence": "confirmed against the submission file",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "Zero-Shot"
+  },
+  "RMITIR-llama70B": {
+    "family": "Llama",
+    "model": "Llama-3-Instruct 70B",
+    "evidence": "confirmed against the submission file",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "Zero-Shot"
+  },
+  "TREMA-4prompts": {
+    "family": "Llama",
+    "model": "Llama-3-Instruct 8B",
+    "evidence": "confirmed against the submission file",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "Zero-Shot"
+  },
+  "TREMA-CoT": {
+    "family": "Llama",
+    "model": "Llama-3-Instruct 8B",
+    "evidence": "arXiv:2502.13908 Table 2: 'TREMA-CoT | Llama-3-Instruct | 8B | - | CoT'",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "CoT"
+  },
+  "TREMA-all": {
+    "family": "T5",
+    "model": "ChatGPT-3.5 (rubric/criteria generation) + FLAN-T5-Large 783M (grading/classification, ET ensemble)",
+    "evidence": "confirmed against the submission file",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "Few-Shot",
+    "pipeline_note": "Two-stage: ChatGPT-3.5 generates rubric → FLAN-T5-Large classifies criteria → ET ensemble aggregation"
+  },
+  "TREMA-direct": {
+    "family": "T5",
+    "model": "ChatGPT-3.5 (criteria generation) + FLAN-T5-Large 783M (grading, ET ensemble)",
+    "evidence": "arXiv:2502.13908 Table 2: 'TREMA-direct | ChatGPT-3.5/FlanT5-Large | 783M | - | Few-Shot | N | ET'",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "Few-Shot",
+    "pipeline_note": "Two-stage pipeline same as TREMA-all"
+  },
+  "TREMA-naiveBdecompose": {
+    "family": "T5",
+    "model": "ChatGPT-3.5 (criteria generation) + FLAN-T5-Large 783M (grading, GNB ensemble)",
+    "evidence": "confirmed against the submission file",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "Zero-Shot",
+    "pipeline_note": "Two-stage pipeline with GNB ensemble instead of ET"
+  },
+  "TREMA-nuggets": {
+    "family": "T5",
+    "model": "ChatGPT-3.5 (nugget generation) + FLAN-T5-Large 783M (grading, ET ensemble)",
+    "evidence": "arXiv:2502.13908 Table 2: 'TREMA-nuggets | ChatGPT-3.5/FlanT5-Large | 783M | - | Zero-Shot | N | ET'",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "Zero-Shot",
+    "pipeline_note": "Two-stage pipeline using nugget-based criteria"
+  },
+  "TREMA-other": {
+    "family": "T5",
+    "model": "ChatGPT-3.5 (criteria generation) + FLAN-T5-Large 783M (grading, no ensemble)",
+    "evidence": "confirmed against the submission file",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "Zero-Shot",
+    "pipeline_note": "Two-stage pipeline without ensemble aggregation"
+  },
+  "TREMA-questions": {
+    "family": "T5",
+    "model": "ChatGPT-3.5 (question generation) + FLAN-T5-Large 783M (grading, ET ensemble)",
+    "evidence": "arXiv:2502.13908 Table 2: 'TREMA-questions | ChatGPT-3.5/FlanT5-Large | 783M | - | Zero-Shot | N | ET'",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "Zero-Shot",
+    "pipeline_note": "Two-stage pipeline using question-based criteria"
+  },
+  "TREMA-rubric0": {
+    "family": "T5",
+    "model": "ChatGPT-3.5 (rubric generation) + FLAN-T5-Large 783M (grading, no ensemble)",
+    "evidence": "confirmed against the submission file",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "Zero-Shot",
+    "pipeline_note": "Two-stage pipeline without ensemble aggregation"
+  },
+  "TREMA-sumdecompose": {
+    "family": "Llama",
+    "model": "Llama-3-Instruct 8B",
+    "evidence": "confirmed against the submission file",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "Zero-Shot"
+  },
+  "h2oloo-fewself": {
+    "family": "GPT",
+    "model": "GPT-4o",
+    "evidence": "confirmed against the submission file",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "Few-Shot"
+  },
+  "h2oloo-zeroshot1": {
+    "family": "Llama",
+    "model": "Llama-3-Instruct 8B (fine-tuned on TREC DL 2019-2022 qrels)",
+    "evidence": "confirmed against the submission file",
+    "confidence": "high",
+    "fine_tuned": true,
+    "prompt_type": "Zero-Shot"
+  },
+  "h2oloo-zeroshot2": {
+    "family": "Llama",
+    "model": "Llama-3-Instruct 8B (fine-tuned on TREC DL 2019-2022 qrels + LLMJudge dev set)",
+    "evidence": "confirmed against the submission file",
+    "confidence": "high",
+    "fine_tuned": true,
+    "prompt_type": "Zero-Shot"
+  },
+  "prophet-setting1": {
+    "family": "Llama",
+    "model": "Llama-3-Instruct 8B (fine-tuned)",
+    "evidence": "confirmed against the submission file",
+    "confidence": "high",
+    "fine_tuned": true,
+    "prompt_type": "Zero-Shot"
+  },
+  "prophet-setting2": {
+    "family": "Llama",
+    "model": "Llama-3-Instruct 8B (fine-tuned)",
+    "evidence": "arXiv:2502.13908 Table 2: 'prophet-setting2 | Llama-3-Instruct | 8B | FT | Zero-Shot'",
+    "confidence": "high",
+    "fine_tuned": true,
+    "prompt_type": "Zero-Shot"
+  },
+  "prophet-setting4": {
+    "family": "Llama",
+    "model": "Llama-3-Instruct 8B (fine-tuned)",
+    "evidence": "arXiv:2502.13908 Table 2: 'prophet-setting4 | Llama-3-Instruct | 8B | FT | Zero-Shot'",
+    "confidence": "high",
+    "fine_tuned": true,
+    "prompt_type": "Zero-Shot"
+  },
+  "willia-umbrela1": {
+    "family": "GPT",
+    "model": "GPT-4o",
+    "evidence": "confirmed against the submission file",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "Zero-Shot"
+  },
+  "willia-umbrela2": {
+    "family": "GPT",
+    "model": "GPT-4o",
+    "evidence": "arXiv:2502.13908 Table 2: 'willia-umbrela2 | GPT-4o | - | - | Zero-Shot'",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "Zero-Shot"
+  },
+  "willia-umbrela3": {
+    "family": "GPT",
+    "model": "GPT-4o",
+    "evidence": "arXiv:2502.13908 Table 2: 'willia-umbrela3 | GPT-4o | - | - | Zero-Shot | ensemble'",
+    "confidence": "high",
+    "fine_tuned": false,
+    "prompt_type": "Zero-Shot"
+  },
+  "_meta": {
+    "source": "arXiv:2502.13908 Table 2 (Rahmani, Siro, Aliannejadi, Craswell, Clarke, Faggioli, Mitra, Thomas, Yilmaz, 2025, 'Judging the Judges: A Collection of LLM-Generated Relevance Judgements'); HTML full text retrieved from https://arxiv.org/html/2502.13908v1.",
+    "method": "Each judge is assigned to a model family from the model column of that table; the evidence string on each entry quotes the row used. Model names were additionally confirmed against the submission files.",
+    "organizer_baselines": "Nine llmjudge-* runs are not in the public GitHub release and are excluded.",
+    "trema_pipeline": "TREMA runs combine ChatGPT-3.5 for generation with FLAN-T5-Large for grading; they are assigned to the T5 family because grading determines the emitted label."
+  }
+}

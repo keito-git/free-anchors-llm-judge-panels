@@ -1,0 +1,98 @@
+{
+ "env": {
+  "script": "e5b_latent_class_gof.py",
+  "n_items": 4423,
+  "n_judges": 33,
+  "K_grid": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   8
+  ],
+  "n_sim_per_K": 1000,
+  "seed": 20260804,
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0,
+  "n_restarts": 20,
+  "em_iters": 200,
+  "bootstrap_em_iters": 200,
+  "note": "Bootstrap EM uses the same iteration count as the main fit. An earlier run used 60 for the bootstrap and 200 for the main fit, which widened the reference band and produced a spurious \"inside\" verdict at K=3."
+ },
+ "per_K": {
+  "2": {
+   "loglik": -138406.9751968205,
+   "observed_cross_residual_corr": 0.19692238368068044,
+   "reference_mean": 4.6346074915605627e-05,
+   "reference_ci95": [
+    -0.0017692284149058535,
+    0.001984989516369511
+   ],
+   "inside_reference_band": false,
+   "excess_over_reference": 0.19687603760576483
+  },
+  "3": {
+   "loglik": -129400.80682227363,
+   "observed_cross_residual_corr": 0.06040091221730836,
+   "reference_mean": 0.0024509552614434306,
+   "reference_ci95": [
+    -0.002065822052953696,
+    0.0019375019552986287
+   ],
+   "inside_reference_band": false,
+   "excess_over_reference": 0.057949956955864926
+  },
+  "4": {
+   "loglik": -125127.64933393571,
+   "observed_cross_residual_corr": 0.026452921540896616,
+   "reference_mean": 0.005763022819765817,
+   "reference_ci95": [
+    -0.002355364143348785,
+    0.021122222179795296
+   ],
+   "inside_reference_band": false,
+   "excess_over_reference": 0.0206898987211308
+  },
+  "5": {
+   "loglik": -123072.77770979835,
+   "observed_cross_residual_corr": -0.013307110919563934,
+   "reference_mean": 0.0008780643875182552,
+   "reference_ci95": [
+    -0.005018557395357975,
+    0.04705667910117751
+   ],
+   "inside_reference_band": false,
+   "excess_over_reference": -0.014185175307082189
+  },
+  "6": {
+   "loglik": -121548.87652303593,
+   "observed_cross_residual_corr": 0.012516853872104248,
+   "reference_mean": -0.0010024703697480639,
+   "reference_ci95": [
+    -0.020817366370654254,
+    0.009671479137903028
+   ],
+   "inside_reference_band": false,
+   "excess_over_reference": 0.013519324241852312
+  },
+  "8": {
+   "loglik": -120000.9203507588,
+   "observed_cross_residual_corr": -0.00624702131142125,
+   "reference_mean": -0.00281184401372371,
+   "reference_ci95": [
+    -0.01555006114604634,
+    0.005488592506599661
+   ],
+   "inside_reference_band": true,
+   "excess_over_reference": -0.00343517729769754
+  }
+ },
+ "verdict": {
+  "any_K_consistent_with_model": true,
+  "min_excess": -0.014185175307082189,
+  "argmin_K": "5",
+  "reading": "If no K puts the observed statistic inside the reference band, the between-family conditional independence assumption fails on this panel and the radius invariance in E2c cannot be read as evidence for Theorem 3."
+ }
+}

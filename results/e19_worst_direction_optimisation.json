@@ -1,0 +1,60 @@
+{
+ "env": {
+  "script": "e19_worst_direction_optimisation.py",
+  "seeds": [
+   42,
+   123,
+   456,
+   789,
+   1024,
+   20260804
+  ],
+  "sampled_directions": 4000,
+  "optimiser": "Nelder-Mead, 24 starts, maxiter 1200",
+  "prototypes": "gold-conditioned mean (identical to E2c)",
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "rows": [
+  {
+   "m": 0,
+   "sampled_diameter": 1.6522373673184734,
+   "sampled_directions": 24000,
+   "optimised_diameter": 1.9296153555564988,
+   "absolute_gain": 0.2773779882380254,
+   "relative_gain": 0.167880229393553
+  },
+  {
+   "m": 1,
+   "sampled_diameter": 1.1644178813105488,
+   "sampled_directions": 24000,
+   "optimised_diameter": 1.6335827098979276,
+   "absolute_gain": 0.46916482858737885,
+   "relative_gain": 0.4029179181440732
+  },
+  {
+   "m": 2,
+   "sampled_diameter": 1.1644178813105488,
+   "sampled_directions": 24000,
+   "optimised_diameter": 1.6287458826924708,
+   "absolute_gain": 0.464328001381922,
+   "relative_gain": 0.3987640595653875
+  },
+  {
+   "m": 3,
+   "sampled_diameter": 1.1644178813105488,
+   "sampled_directions": 24000,
+   "optimised_diameter": 1.6287458826924708,
+   "absolute_gain": 0.464328001381922,
+   "relative_gain": 0.3987640595653875
+  }
+ ],
+ "summary": {
+  "max_relative_gain": 0.4029179181440732,
+  "optimised_m1": 1.6335827098979276,
+  "optimised_m3": 1.6287458826924708,
+  "optimised_m1_minus_m3": 0.004836827205456862,
+  "flatness_survives_optimisation": false
+ }
+}

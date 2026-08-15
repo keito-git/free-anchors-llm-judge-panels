@@ -1,0 +1,151 @@
+{
+ "env": {
+  "script": "e6_sensitivity_and_vossler.py",
+  "n_items": 4423,
+  "n_judges": 33,
+  "seeds": [
+   42,
+   123,
+   456
+  ],
+  "n_dirs": 3000,
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "E6a_prototype_sensitivity": {
+  "gold_mean": {
+   "prototypes": [
+    [
+     0.6715791014887058,
+     0.18320864505403087,
+     0.11001993123252561,
+     0.035192322224741494
+    ],
+    [
+     0.4464105777974376,
+     0.27894516945611997,
+     0.20202020202020335,
+     0.07262405072624105
+    ],
+    [
+     0.2492874287428749,
+     0.28352835283528527,
+     0.34225922592259433,
+     0.12492499249925075
+    ],
+    [
+     0.16461699220319956,
+     0.2327787155373369,
+     0.3767382043244113,
+     0.2258660879350538
+    ]
+   ],
+   "eta": 0.035192322224741494,
+   "floor_2eta": 0.07038464444948299,
+   "radius_by_m": {
+    "m=0": 1.5717752936413227,
+    "m=1": 1.0912041687898932,
+    "m=2": 1.0912041687898932,
+    "m=3": 1.0912041687898932
+   },
+   "radius_flat_from_m1": true,
+   "kernels_bind": true
+  },
+  "gold_trimmed_mean": {
+   "prototypes": [
+    [
+     0.7968638768638762,
+     0.1421067821067828,
+     0.049639249639249663,
+     0.011390091390091367
+    ],
+    [
+     0.5090687900906855,
+     0.29849590798496106,
+     0.15428002654280054,
+     0.03815527538155293
+    ],
+    [
+     0.23962202671880095,
+     0.3251873574454214,
+     0.34030628869338575,
+     0.09488432714239195
+    ],
+    [
+     0.13007807330951457,
+     0.22733889109434977,
+     0.407966124123329,
+     0.2346169114728067
+    ]
+   ],
+   "eta": 0.011390091390091367,
+   "floor_2eta": 0.022780182780182734,
+   "radius_by_m": {
+    "m=0": 1.6886429090832111,
+    "m=1": 0.8431776493157009,
+    "m=2": 0.8431776493157009,
+    "m=3": 0.8431776493157009
+   },
+   "radius_flat_from_m1": true,
+   "kernels_bind": true
+  },
+  "em_latent_K4": {
+   "prototypes": [
+    [
+     0.21311403534751072,
+     0.4225396554526197,
+     0.29001149773808904,
+     0.07433481146178066
+    ],
+    [
+     0.05984614617267381,
+     0.14207429256275803,
+     0.5199434411446321,
+     0.278136120119936
+    ],
+    [
+     0.9542555978453963,
+     0.02881732991231907,
+     0.011572492658593544,
+     0.005354579583691182
+    ],
+    [
+     0.6451046220102518,
+     0.27428273269287246,
+     0.06667580459523262,
+     0.01393684070164314
+    ]
+   ],
+   "eta": 0.005354579583691182,
+   "floor_2eta": 0.010709159167382364,
+   "radius_by_m": {
+    "m=0": 1.9171836861196239,
+    "m=1": 0.6121790419273635,
+    "m=2": 0.6121790419273635,
+    "m=3": 0.6121790419273635
+   },
+   "radius_flat_from_m1": true,
+   "kernels_bind": true
+  },
+  "note": "The E2c conclusion is that the radius drops once when the first family is added and then stops moving. This block checks whether that pattern survives other prototype constructions."
+ },
+ "E6b_vossler_recovery_contrast": {
+  "M_levels": 3,
+  "K_prototypes": 3,
+  "n_items": 1200,
+  "families": 3,
+  "pooled_contract": {
+   "kernel_recovery_mean_abs_error": 0.03700383411912245,
+   "identified": true,
+   "note": "pooling supplies the finite-mixture tensor structure Kruskal needs"
+  },
+  "item_free_contract": {
+   "fraction_of_random_prevalences_matching_observation": 0.0,
+   "tolerance_l_inf": 0.12,
+   "continuum_of_solutions": false,
+   "note": "with each item carrying its own free prevalence, a positive-measure set of prevalences reproduces the observation, which is Vossler's M >= 3 non-identification"
+  },
+  "both_hold_simultaneously": false
+ }
+}

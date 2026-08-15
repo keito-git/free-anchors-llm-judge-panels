@@ -1,0 +1,580 @@
+{
+  "A": {
+    "definition": "A",
+    "n_pairs_total": 528,
+    "n_pairs_within": 213,
+    "n_pairs_cross": 315,
+    "within_family": {
+      "label": "within_family",
+      "n_pairs": 213,
+      "spearman_rho": {
+        "mean": 0.6610942906141728,
+        "std": 0.15831845565674862,
+        "median": 0.6615859708013399,
+        "min": 0.17613014616549671,
+        "max": 0.9994113367845706
+      },
+      "cohen_kappa_w": {
+        "mean": 0.48825964923498283,
+        "std": 0.19181672197872604
+      },
+      "pearson_phi_binary": {
+        "mean": 0.5892391008944554,
+        "std": 0.1694753458600126
+      }
+    },
+    "cross_family": {
+      "label": "cross_family",
+      "n_pairs": 315,
+      "spearman_rho": {
+        "mean": 0.5557483662494941,
+        "std": 0.15059463302909598,
+        "median": 0.5925230937645386,
+        "min": 0.14463133506002301,
+        "max": 0.9519876818893189
+      },
+      "cohen_kappa_w": {
+        "mean": 0.38770544760113773,
+        "std": 0.14379792822554432
+      },
+      "pearson_phi_binary": {
+        "mean": 0.4940885049948915,
+        "std": 0.1378570471884723
+      }
+    },
+    "differences": {
+      "spearman_rho_diff": 0.10534592436467871,
+      "phi_diff": 0.09515059589956393
+    },
+    "statistical_tests": {
+      "spearman_rho": {
+        "welch_t_test": {
+          "t": 7.649225816814571,
+          "p_two_sided": 1.2878861989016375e-13,
+          "p_one_sided": 6.439430994508187e-14
+        },
+        "bootstrap_diff_ci_95pct": {
+          "observed": 0.10534592436467871,
+          "ci_lo": 0.07850729014795667,
+          "ci_hi": 0.1331653032028473
+        }
+      },
+      "cohen_kappa_w": {
+        "welch_t_test": {
+          "t": 6.51270741229855,
+          "p_two_sided": 2.426289702704275e-10,
+          "p_one_sided": 1.2131448513521375e-10
+        },
+        "bootstrap_diff_ci_95pct": {
+          "observed": 0.1005542016338451,
+          "ci_lo": 0.07041849489251899,
+          "ci_hi": 0.13198168610526959
+        }
+      },
+      "pearson_phi_binary": {
+        "welch_t_test": {
+          "t": 6.810793705552138,
+          "p_two_sided": 3.671810244517281e-11,
+          "p_one_sided": 1.8359051222586406e-11
+        },
+        "bootstrap_diff_ci_95pct": {
+          "observed": 0.09515059589956393,
+          "ci_lo": 0.06766493990802194,
+          "ci_hi": 0.12324944287995122
+        }
+      }
+    },
+    "within_by_family": {
+      "GPT": {
+        "label": "within_GPT",
+        "n_pairs": 21,
+        "spearman_rho": {
+          "mean": 0.867318274672804,
+          "std": 0.042311956485222096,
+          "median": 0.8646486343602052,
+          "min": 0.7931903822502149,
+          "max": 0.9960146880768261
+        },
+        "cohen_kappa_w": {
+          "mean": 0.7683861606423947,
+          "std": 0.06257124063536341
+        },
+        "pearson_phi_binary": {
+          "mean": 0.8102932370000185,
+          "std": 0.0701706738070915
+        }
+      },
+      "Llama": {
+        "label": "within_Llama",
+        "n_pairs": 171,
+        "spearman_rho": {
+          "mean": 0.6650583146239538,
+          "std": 0.12376463347410606,
+          "median": 0.6613300837832802,
+          "min": 0.40503291750929893,
+          "max": 0.9994113367845706
+        },
+        "cohen_kappa_w": {
+          "mean": 0.47922238988144256,
+          "std": 0.1679802402672194
+        },
+        "pearson_phi_binary": {
+          "mean": 0.5829684130745331,
+          "std": 0.14891180292215037
+        }
+      },
+      "T5": {
+        "label": "within_T5",
+        "n_pairs": 21,
+        "spearman_rho": {
+          "mean": 0.4225918253330402,
+          "std": 0.17081820284024207,
+          "median": 0.4439110987184982,
+          "min": 0.17613014616549671,
+          "max": 0.8207474408518807
+        },
+        "cohen_kappa_w": {
+          "mean": 0.2817222497063983,
+          "std": 0.13552390068581605
+        },
+        "pearson_phi_binary": {
+          "mean": 0.4192462798939737,
+          "std": 0.1704586871727538
+        }
+      }
+    },
+    "llama_ft_stratification": {
+      "within_FT": {
+        "label": "within_FT",
+        "n_pairs": 10,
+        "spearman_rho": {
+          "mean": 0.6124563753353113,
+          "std": 0.07754333962241547,
+          "median": 0.6041200833059128,
+          "min": 0.5273139054166425,
+          "max": 0.7778188443244429
+        },
+        "cohen_kappa_w": {
+          "mean": 0.4788884459964152,
+          "std": 0.10540590608174014
+        },
+        "pearson_phi_binary": {
+          "mean": 0.5810132326145038,
+          "std": 0.07171388670357214
+        }
+      },
+      "within_nonFT": {
+        "label": "within_nonFT",
+        "n_pairs": 91,
+        "spearman_rho": {
+          "mean": 0.7431403828114255,
+          "std": 0.0967276672801609,
+          "median": 0.7138872078483469,
+          "min": 0.6341436016418924,
+          "max": 0.9994113367845706
+        },
+        "cohen_kappa_w": {
+          "mean": 0.5630223035991455,
+          "std": 0.16387861294742548
+        },
+        "pearson_phi_binary": {
+          "mean": 0.6575050598315119,
+          "std": 0.14519915803141062
+        }
+      },
+      "cross_FT_nonFT": {
+        "label": "cross_FT_nonFT",
+        "n_pairs": 70,
+        "spearman_rho": {
+          "mean": 0.571066188735761,
+          "std": 0.0857137314593636,
+          "median": 0.5739530793373904,
+          "min": 0.40503291750929893,
+          "max": 0.7617372860934614
+        },
+        "cohen_kappa_w": {
+          "mean": 0.3703302083177186,
+          "std": 0.10840292666269508
+        },
+        "pearson_phi_binary": {
+          "mean": 0.48635008378475053,
+          "std": 0.09831188381165412
+        }
+      }
+    },
+    "reference_arXiv_2605_29800": {
+      "reported_within_phi": 0.437,
+      "reported_cross_phi": 0.389,
+      "reported_diff": 0.048,
+      "note": "We use Pearson phi on binarized scores (0->0, 1-3->1) as the closest reconstruction of their metric. Spearman rho on the full 0-3 ordinal scale is also reported."
+    },
+    "caveats": [
+      "T5/TREMA family judges all use the same two-stage pipeline (ChatGPT-3.5 rubric + FLAN-T5-Large grading). Their within-family correlation may reflect shared GPT-3.5 rubric rather than FLAN-T5 model family."
+    ]
+  },
+  "B": {
+    "definition": "B",
+    "n_pairs_total": 528,
+    "n_pairs_within": 262,
+    "n_pairs_cross": 266,
+    "within_family": {
+      "label": "within_family",
+      "n_pairs": 262,
+      "spearman_rho": {
+        "mean": 0.6298457457245045,
+        "std": 0.16798549983648295,
+        "median": 0.637537992403266,
+        "min": 0.17613014616549671,
+        "max": 0.9994113367845706
+      },
+      "cohen_kappa_w": {
+        "mean": 0.4599079141341695,
+        "std": 0.18894044598775206
+      },
+      "pearson_phi_binary": {
+        "mean": 0.5668640989707855,
+        "std": 0.16878086603514583
+      }
+    },
+    "cross_family": {
+      "label": "cross_family",
+      "n_pairs": 266,
+      "spearman_rho": {
+        "mean": 0.5671211800360499,
+        "std": 0.14997591035790322,
+        "median": 0.6022639203266985,
+        "min": 0.144631335060023,
+        "max": 0.9519876818893189
+      },
+      "cohen_kappa_w": {
+        "mean": 0.39710769841450116,
+        "std": 0.14717584708349873
+      },
+      "pearson_phi_binary": {
+        "mean": 0.49859929937430075,
+        "std": 0.13949717959927976
+      }
+    },
+    "differences": {
+      "spearman_rho_diff": 0.06272456568845453,
+      "phi_diff": 0.06826479959648474
+    },
+    "statistical_tests": {
+      "spearman_rho": {
+        "welch_t_test": {
+          "t": 4.5236243720198654,
+          "p_two_sided": 7.545722393054237e-06,
+          "p_one_sided": 3.7728611965271185e-06
+        },
+        "bootstrap_diff_ci_95pct": {
+          "observed": 0.06272456568845453,
+          "ci_lo": 0.03461516324482307,
+          "ci_hi": 0.08763530947316486
+        }
+      },
+      "cohen_kappa_w": {
+        "welch_t_test": {
+          "t": 4.256442601770868,
+          "p_two_sided": 2.4872774117639035e-05,
+          "p_one_sided": 1.2436387058819517e-05
+        },
+        "bootstrap_diff_ci_95pct": {
+          "observed": 0.06280021571966832,
+          "ci_lo": 0.03343505569066529,
+          "ci_hi": 0.09105318022448093
+        }
+      },
+      "pearson_phi_binary": {
+        "welch_t_test": {
+          "t": 5.061725665588115,
+          "p_two_sided": 5.829411798329917e-07,
+          "p_one_sided": 2.9147058991649586e-07
+        },
+        "bootstrap_diff_ci_95pct": {
+          "observed": 0.06826479959648474,
+          "ci_lo": 0.040001582985047364,
+          "ci_hi": 0.0929628620666295
+        }
+      }
+    },
+    "within_by_family": {
+      "GPT_T5": {
+        "label": "within_GPT_T5",
+        "n_pairs": 91,
+        "spearman_rho": {
+          "mean": 0.5636770722980666,
+          "std": 0.21475397326663428,
+          "median": 0.5810543090951837,
+          "min": 0.17613014616549671,
+          "max": 0.9960146880768261
+        },
+        "cohen_kappa_w": {
+          "mean": 0.4236136794881947,
+          "std": 0.21951188217438616
+        },
+        "pearson_phi_binary": {
+          "mean": 0.5366021460945127,
+          "std": 0.1982622713043184
+        }
+      },
+      "Llama": {
+        "label": "within_Llama",
+        "n_pairs": 171,
+        "spearman_rho": {
+          "mean": 0.6650583146239538,
+          "std": 0.12376463347410606,
+          "median": 0.6613300837832802,
+          "min": 0.40503291750929893,
+          "max": 0.9994113367845706
+        },
+        "cohen_kappa_w": {
+          "mean": 0.47922238988144256,
+          "std": 0.1679802402672194
+        },
+        "pearson_phi_binary": {
+          "mean": 0.5829684130745331,
+          "std": 0.14891180292215037
+        }
+      }
+    },
+    "llama_ft_stratification": {
+      "within_FT": {
+        "label": "within_FT",
+        "n_pairs": 10,
+        "spearman_rho": {
+          "mean": 0.6124563753353113,
+          "std": 0.07754333962241547,
+          "median": 0.6041200833059128,
+          "min": 0.5273139054166425,
+          "max": 0.7778188443244429
+        },
+        "cohen_kappa_w": {
+          "mean": 0.4788884459964152,
+          "std": 0.10540590608174014
+        },
+        "pearson_phi_binary": {
+          "mean": 0.5810132326145038,
+          "std": 0.07171388670357214
+        }
+      },
+      "within_nonFT": {
+        "label": "within_nonFT",
+        "n_pairs": 91,
+        "spearman_rho": {
+          "mean": 0.7431403828114255,
+          "std": 0.0967276672801609,
+          "median": 0.7138872078483469,
+          "min": 0.6341436016418924,
+          "max": 0.9994113367845706
+        },
+        "cohen_kappa_w": {
+          "mean": 0.5630223035991455,
+          "std": 0.16387861294742548
+        },
+        "pearson_phi_binary": {
+          "mean": 0.6575050598315119,
+          "std": 0.14519915803141062
+        }
+      },
+      "cross_FT_nonFT": {
+        "label": "cross_FT_nonFT",
+        "n_pairs": 70,
+        "spearman_rho": {
+          "mean": 0.571066188735761,
+          "std": 0.0857137314593636,
+          "median": 0.5739530793373904,
+          "min": 0.40503291750929893,
+          "max": 0.7617372860934614
+        },
+        "cohen_kappa_w": {
+          "mean": 0.3703302083177186,
+          "std": 0.10840292666269508
+        },
+        "pearson_phi_binary": {
+          "mean": 0.48635008378475053,
+          "std": 0.09831188381165412
+        }
+      }
+    },
+    "reference_arXiv_2605_29800": {
+      "reported_within_phi": 0.437,
+      "reported_cross_phi": 0.389,
+      "reported_diff": 0.048,
+      "note": "We use Pearson phi on binarized scores (0->0, 1-3->1) as the closest reconstruction of their metric. Spearman rho on the full 0-3 ordinal scale is also reported."
+    },
+    "caveats": []
+  },
+  "C": {
+    "definition": "C",
+    "n_pairs_total": 528,
+    "n_pairs_within": 195,
+    "n_pairs_cross": 333,
+    "within_family": {
+      "label": "within_family",
+      "n_pairs": 195,
+      "spearman_rho": {
+        "mean": 0.659352356854697,
+        "std": 0.16376268820511186,
+        "median": 0.6615859708013399,
+        "min": 0.17613014616549671,
+        "max": 0.9994113367845706
+      },
+      "cohen_kappa_w": {
+        "mean": 0.48766257416530456,
+        "std": 0.19815973688431357
+      },
+      "pearson_phi_binary": {
+        "mean": 0.5888773679299293,
+        "std": 0.17525573027370142
+      }
+    },
+    "cross_family": {
+      "label": "cross_family",
+      "n_pairs": 333,
+      "spearman_rho": {
+        "mean": 0.5624627918400706,
+        "std": 0.15017898031253907,
+        "median": 0.5999593877000443,
+        "min": 0.14463133506002301,
+        "max": 0.9519876818893189
+      },
+      "cohen_kappa_w": {
+        "mean": 0.39349044840593195,
+        "std": 0.1438440334068054
+      },
+      "pearson_phi_binary": {
+        "mean": 0.4994436060587797,
+        "std": 0.1373661667621611
+      }
+    },
+    "differences": {
+      "spearman_rho_diff": 0.09688956501462631,
+      "phi_diff": 0.0894337618711496
+    },
+    "statistical_tests": {
+      "spearman_rho": {
+        "welch_t_test": {
+          "t": 6.762802674334688,
+          "p_two_sided": 5.1483919058780534e-11,
+          "p_one_sided": 2.5741959529390267e-11
+        },
+        "bootstrap_diff_ci_95pct": {
+          "observed": 0.09688956501462631,
+          "ci_lo": 0.06897716386431513,
+          "ci_hi": 0.12466086064552415
+        }
+      },
+      "cohen_kappa_w": {
+        "welch_t_test": {
+          "t": 5.801322584432839,
+          "p_two_sided": 1.6031244781791543e-08,
+          "p_one_sided": 8.015622390895771e-09
+        },
+        "bootstrap_diff_ci_95pct": {
+          "observed": 0.09417212575937262,
+          "ci_lo": 0.06273799934002483,
+          "ci_hi": 0.1256449337667096
+        }
+      },
+      "pearson_phi_binary": {
+        "welch_t_test": {
+          "t": 6.111058271625408,
+          "p_two_sided": 2.7611309169560625e-09,
+          "p_one_sided": 1.3805654584780313e-09
+        },
+        "bootstrap_diff_ci_95pct": {
+          "observed": 0.0894337618711496,
+          "ci_lo": 0.06140638360046494,
+          "ci_hi": 0.11784546945416376
+        }
+      }
+    },
+    "within_by_family": {
+      "GPT": {
+        "label": "within_GPT",
+        "n_pairs": 21,
+        "spearman_rho": {
+          "mean": 0.867318274672804,
+          "std": 0.042311956485222096,
+          "median": 0.8646486343602052,
+          "min": 0.7931903822502149,
+          "max": 0.9960146880768261
+        },
+        "cohen_kappa_w": {
+          "mean": 0.7683861606423947,
+          "std": 0.06257124063536341
+        },
+        "pearson_phi_binary": {
+          "mean": 0.8102932370000185,
+          "std": 0.0701706738070915
+        }
+      },
+      "Llama_8B": {
+        "label": "within_Llama_8B",
+        "n_pairs": 153,
+        "spearman_rho": {
+          "mean": 0.6633045587355761,
+          "std": 0.128133062969864,
+          "median": 0.6613300837832802,
+          "min": 0.40503291750929893,
+          "max": 0.9994113367845706
+        },
+        "cohen_kappa_w": {
+          "mean": 0.4773982048686911,
+          "std": 0.17416218663927893
+        },
+        "pearson_phi_binary": {
+          "mean": 0.5817696528860284,
+          "std": 0.15469626366743483
+        }
+      },
+      "Llama_70B": {
+        "label": "within_Llama_70B",
+        "n_pairs": 0
+      },
+      "T5": {
+        "label": "within_T5",
+        "n_pairs": 21,
+        "spearman_rho": {
+          "mean": 0.4225918253330402,
+          "std": 0.17081820284024207,
+          "median": 0.4439110987184982,
+          "min": 0.17613014616549671,
+          "max": 0.8207474408518807
+        },
+        "cohen_kappa_w": {
+          "mean": 0.2817222497063983,
+          "std": 0.13552390068581605
+        },
+        "pearson_phi_binary": {
+          "mean": 0.4192462798939737,
+          "std": 0.1704586871727538
+        }
+      }
+    },
+    "llama_ft_stratification": {
+      "within_FT": {
+        "label": "within_FT",
+        "n_pairs": 0
+      },
+      "within_nonFT": {
+        "label": "within_nonFT",
+        "n_pairs": 0
+      },
+      "cross_FT_nonFT": {
+        "label": "cross_FT_nonFT",
+        "n_pairs": 0
+      }
+    },
+    "reference_arXiv_2605_29800": {
+      "reported_within_phi": 0.437,
+      "reported_cross_phi": 0.389,
+      "reported_diff": 0.048,
+      "note": "We use Pearson phi on binarized scores (0->0, 1-3->1) as the closest reconstruction of their metric. Spearman rho on the full 0-3 ordinal scale is also reported."
+    },
+    "caveats": [
+      "Families with 1 judge (['Llama_70B']): no within-family pairs exist for these families.",
+      "T5/TREMA family judges all use the same two-stage pipeline (ChatGPT-3.5 rubric + FLAN-T5-Large grading). Their within-family correlation may reflect shared GPT-3.5 rubric rather than FLAN-T5 model family."
+    ]
+  }
+}

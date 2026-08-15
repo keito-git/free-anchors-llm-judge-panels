@@ -1,0 +1,78 @@
+{
+ "env": {
+  "script": "e32_anchor_effect_on_interior.py",
+  "seeds": [
+   42,
+   123,
+   456,
+   789,
+   1024,
+   20260804
+  ],
+  "n_dirs_per_seed": 3000,
+  "estimator": "optimised, 16 starts, maxiter 1000",
+  "measurement": "anchors constrain A; displacement is measured on the interior prototypes only",
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "second_panel_all_vertices_covered": {
+  "n_interior_prototypes": 120,
+  "sweep": [
+   {
+    "anchor_fraction": 0.0,
+    "n_anchor_items": 0,
+    "interior_diameter": 0.8895170851044711
+   },
+   {
+    "anchor_fraction": 0.02,
+    "n_anchor_items": 2,
+    "interior_diameter": 0.8531937276177954
+   },
+   {
+    "anchor_fraction": 0.1,
+    "n_anchor_items": 12,
+    "interior_diameter": 0.8450615032113775
+   },
+   {
+    "anchor_fraction": 0.2,
+    "n_anchor_items": 24,
+    "interior_diameter": 0.8450615032113775
+   }
+  ],
+  "reduction_pct_largest": 4.997720969898223,
+  "monotone_non_increasing": true
+ },
+ "first_panel_one_vertex_covered": {
+  "n_interior_prototypes": 400,
+  "sweep": [
+   {
+    "anchor_fraction": 0.0,
+    "n_anchor_items": 0,
+    "interior_diameter": 1.1233434144439205
+   },
+   {
+    "anchor_fraction": 0.005,
+    "n_anchor_items": 2,
+    "interior_diameter": 0.9207815862462334
+   },
+   {
+    "anchor_fraction": 0.05,
+    "n_anchor_items": 20,
+    "interior_diameter": 0.9207815862462334
+   },
+   {
+    "anchor_fraction": 0.2,
+    "n_anchor_items": 80,
+    "interior_diameter": 0.9207815862462334
+   }
+  ],
+  "reduction_pct_largest": 18.032048400618393,
+  "monotone_non_increasing": true
+ },
+ "summary": {
+  "second_panel_reduction_pct": 4.997720969898223,
+  "first_panel_reduction_pct": 18.032048400618393,
+  "reading": "Theorem 4 needs every label represented among the vertex items; the second panel meets that and the first does not."
+ }
+}

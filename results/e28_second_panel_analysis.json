@@ -1,0 +1,73 @@
+{
+ "env": {
+  "script": "e28_second_panel_analysis.py",
+  "collection": "BEIR TREC-COVID, independent of TREC DL 2023",
+  "n_items": 294,
+  "L": 3,
+  "judges": 9,
+  "families": [
+   "GPT",
+   "Claude",
+   "Gemini",
+   "Llama",
+   "Qwen",
+   "Mistral",
+   "DeepSeek"
+  ],
+  "judges_per_family": {
+   "GPT": 2,
+   "Claude": 2,
+   "Gemini": 1,
+   "Llama": 1,
+   "Qwen": 1,
+   "Mistral": 1,
+   "DeepSeek": 1
+  },
+  "estimator": "optimised, 16 starts, maxiter 1000",
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "eta": 0.052154195011337875,
+ "floor_2eta": 0.10430839002267575,
+ "diameter": {
+  "m=0": 1.8956916099813226,
+  "m=1": 1.1065759637228183,
+  "m=2": 1.10657596372282,
+  "m=3": 1.10657596372282,
+  "m=4": 1.10657596372282,
+  "m=5": 1.1065759637228185,
+  "m=6": 1.1065759637228185,
+  "m=7": 1.1065759637228185
+ },
+ "step_reduction_pct": [
+  41.62679425828545,
+  -1.5543122344752192e-13,
+  0.0,
+  0.0,
+  1.4432899320127035e-13,
+  0.0,
+  0.0
+ ],
+ "domination": {
+  "Claude": false,
+  "Gemini": true,
+  "Llama": false,
+  "Qwen": false,
+  "Mistral": false,
+  "DeepSeek": false
+ },
+ "summary": {
+  "first_family_reduction_pct": 41.62679425828545,
+  "later_family_reductions_pct": [
+   -1.5543122344752192e-13,
+   0.0,
+   0.0,
+   1.4432899320127035e-13,
+   0.0,
+   0.0
+  ],
+  "max_later_reduction_pct": 1.4432899320127035e-13,
+  "n_dominated_later_families": 1
+ }
+}

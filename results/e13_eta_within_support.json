@@ -1,0 +1,28 @@
+{
+ "Japanese": {
+  "support_size_hist": {
+   "1": 461,
+   "2": 1527,
+   "3": 453,
+   "4": 56
+  },
+  "eta_within_support_mean": 0.33281710940854586,
+  "eta_within_support_median": 0.3437506054676147,
+  "eta_within_support_p5": 0.14062542749110785,
+  "eta_within_support_min": 0.040000855999486405,
+  "floor_2eta_within_support_mean": 0.6656342188170917
+ },
+ "Chinese": {
+  "support_size_hist": {
+   "1": 1562,
+   "2": 1940,
+   "3": 49,
+   "4": 13
+  },
+  "eta_within_support_mean": 0.3955924341959743,
+  "eta_within_support_median": 0.4166660347226969,
+  "eta_within_support_p5": 0.21568600922706424,
+  "eta_within_support_min": 0.016128610821271858,
+  "floor_2eta_within_support_mean": 0.7911848683919486
+ }
+}

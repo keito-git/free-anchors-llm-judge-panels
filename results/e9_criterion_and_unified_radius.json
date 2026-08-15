@@ -1,0 +1,41 @@
+{
+ "env": {
+  "script": "e9_criterion_and_unified_radius.py",
+  "answers": "reviewer R3 round-2 items 2 and 3",
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "E9a_binary_criterion": {
+  "n_cases": 60,
+  "agreement": 60,
+  "agreement_rate": 1.0,
+  "n_predicted_shrink": 38,
+  "n_observed_shrink": 38,
+  "disagreements": [],
+  "grid": 260,
+  "note": "The criterion is compared against a direct grid count of the admissible gauge set. Disagreements at the boundary are expected because the grid resolves the set only to its spacing."
+ },
+ "E9b_unified_radius": {
+  "m=0": {
+   "radius": 1.6522373673184734,
+   "n_directions": 24000
+  },
+  "m=1": {
+   "radius": 1.1644178813105488,
+   "n_directions": 24000
+  },
+  "m=2": {
+   "radius": 1.1644178813105488,
+   "n_directions": 24000
+  },
+  "m=3": {
+   "radius": 1.1644178813105488,
+   "n_directions": 24000
+  },
+  "estimator": "maximum l1 displacement over the pooled directions from six seeds, 4000 directions each",
+  "kernel_constraints_bind": true,
+  "flat_from_m1": true,
+  "supersedes": "Table 3 previously reported 1.091 from a three-seed mean of per-seed maxima and 1.054 from a single-seed maximum. Both were lower bounds on the same supremum under different budgets. This value replaces them."
+ }
+}

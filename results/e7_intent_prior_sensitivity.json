@@ -1,0 +1,320 @@
+{
+ "env": {
+  "script": "e7_intent_prior_sensitivity.py",
+  "years": [
+   "2009",
+   "2010",
+   "2011"
+  ],
+  "n_dirichlet_band": 200,
+  "seed": 20260813,
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "by_subtopic_zero_handling": {
+  "include_subtopic0": {
+   "2009": {
+    "uniform": {
+     "n_pairs": 26407,
+     "interior_fraction": 0.18714734729427804,
+     "n_interior": 4942,
+     "eta_mean_interior": 0.25417943381318536,
+     "eta_median_interior": 0.2,
+     "eta_pct5_interior": 0.14285714285714285,
+     "l1_floor_2eta_mean": 0.5083588676263707,
+     "floor_holds_all_interior": true
+    },
+    "count": {
+     "n_pairs": 26407,
+     "interior_fraction": 0.1861248911273526,
+     "n_interior": 4915,
+     "eta_mean_interior": 0.24012614866389684,
+     "eta_median_interior": 0.24632352941176472,
+     "eta_pct5_interior": 0.020408163265306145,
+     "l1_floor_2eta_mean": 0.4802522973277937,
+     "floor_holds_all_interior": true,
+     "spearman_vs_uniform": 0.9930849273810877
+    },
+    "inverse_count": {
+     "n_pairs": 26407,
+     "interior_fraction": 0.18714734729427804,
+     "n_interior": 4942,
+     "eta_mean_interior": 0.021787355485529573,
+     "eta_median_interior": 0.009852216748768473,
+     "eta_pct5_interior": 0.002141199669358935,
+     "l1_floor_2eta_mean": 0.043574710971059145,
+     "floor_holds_all_interior": true,
+     "spearman_vs_uniform": 0.9904271342458478
+    },
+    "dirichlet_band": {
+     "interior_fraction_mean": 0.18714734729427804,
+     "interior_fraction_ci95": [
+      0.18714734729427804,
+      0.18714734729427804
+     ],
+     "eta_mean_interior_mean": 0.24196900891738124,
+     "eta_mean_interior_ci95": [
+      0.22032422250523656,
+      0.2678023382739319
+     ]
+    }
+   },
+   "2010": {
+    "uniform": {
+     "n_pairs": 6553,
+     "interior_fraction": 0.9653593773844041,
+     "n_interior": 6326,
+     "eta_mean_interior": 0.2863947728949309,
+     "eta_median_interior": 0.25,
+     "eta_pct5_interior": 0.16666666666666666,
+     "l1_floor_2eta_mean": 0.5727895457898619,
+     "floor_holds_all_interior": true
+    },
+    "count": {
+     "n_pairs": 6553,
+     "interior_fraction": 0.9656645811078896,
+     "n_interior": 6328,
+     "eta_mean_interior": 0.29449329063171553,
+     "eta_median_interior": 0.2807017543859649,
+     "eta_pct5_interior": 0.07111111111111112,
+     "l1_floor_2eta_mean": 0.5889865812634311,
+     "floor_holds_all_interior": true,
+     "spearman_vs_uniform": 0.466516779736925
+    },
+    "inverse_count": {
+     "n_pairs": 6553,
+     "interior_fraction": 0.9685640164810011,
+     "n_interior": 6347,
+     "eta_mean_interior": 0.14186719215164764,
+     "eta_median_interior": 0.08739617190321415,
+     "eta_pct5_interior": 0.006690454950936664,
+     "l1_floor_2eta_mean": 0.2837343843032953,
+     "floor_holds_all_interior": true,
+     "spearman_vs_uniform": 0.6447453677531919
+    },
+    "dirichlet_band": {
+     "interior_fraction_mean": 0.9675354799328553,
+     "interior_fraction_ci95": [
+      0.9650541736609186,
+      0.9802380589043187
+     ],
+     "eta_mean_interior_mean": 0.2670404903650926,
+     "eta_mean_interior_ci95": [
+      0.24897211569448133,
+      0.28736865869031847
+     ]
+    }
+   },
+   "2011": {
+    "uniform": {
+     "n_pairs": 19381,
+     "interior_fraction": 0.2282131984933698,
+     "n_interior": 4423,
+     "eta_mean_interior": 0.34665385484964956,
+     "eta_median_interior": 0.3333333333333333,
+     "eta_pct5_interior": 0.25,
+     "l1_floor_2eta_mean": 0.6933077096992991,
+     "floor_holds_all_interior": true
+    },
+    "count": {
+     "n_pairs": 19381,
+     "interior_fraction": 0.23239254940405552,
+     "n_interior": 4504,
+     "eta_mean_interior": 0.2739886810774973,
+     "eta_median_interior": 0.31212121212121213,
+     "eta_pct5_interior": 0.03608247422680411,
+     "l1_floor_2eta_mean": 0.5479773621549946,
+     "floor_holds_all_interior": true,
+     "spearman_vs_uniform": 0.9945307977582947
+    },
+    "inverse_count": {
+     "n_pairs": 19381,
+     "interior_fraction": 0.22919354006501214,
+     "n_interior": 4442,
+     "eta_mean_interior": 0.18443293544015008,
+     "eta_median_interior": 0.14753209184595914,
+     "eta_pct5_interior": 0.016100178890876567,
+     "l1_floor_2eta_mean": 0.36886587088030015,
+     "floor_holds_all_interior": true,
+     "spearman_vs_uniform": 0.991802237457614
+    },
+    "dirichlet_band": {
+     "interior_fraction_mean": 0.22962927609514472,
+     "interior_fraction_ci95": [
+      0.2282131984933698,
+      0.23442030854961043
+     ],
+     "eta_mean_interior_mean": 0.3046871351884745,
+     "eta_mean_interior_ci95": [
+      0.28457621056549137,
+      0.32785187391419784
+     ]
+    }
+   }
+  },
+  "exclude_subtopic0": {
+   "2009": {
+    "uniform": {
+     "n_pairs": 4937,
+     "interior_fraction": 0.9953413003848491,
+     "n_interior": 4914,
+     "eta_mean_interior": 0.30097340930674266,
+     "eta_median_interior": 0.25,
+     "eta_pct5_interior": 0.16666666666666666,
+     "l1_floor_2eta_mean": 0.6019468186134853,
+     "floor_holds_all_interior": true
+    },
+    "count": {
+     "n_pairs": 4937,
+     "interior_fraction": 0.9955438525420296,
+     "n_interior": 4915,
+     "eta_mean_interior": 0.24012614866389684,
+     "eta_median_interior": 0.24632352941176472,
+     "eta_pct5_interior": 0.020408163265306145,
+     "l1_floor_2eta_mean": 0.4802522973277937,
+     "floor_holds_all_interior": true,
+     "spearman_vs_uniform": 0.49670986058248745
+    },
+    "inverse_count": {
+     "n_pairs": 4937,
+     "interior_fraction": 0.9955438525420296,
+     "n_interior": 4915,
+     "eta_mean_interior": 0.08029086528993928,
+     "eta_median_interior": 0.03825136612021859,
+     "eta_pct5_interior": 0.005634046979284042,
+     "l1_floor_2eta_mean": 0.16058173057987857,
+     "floor_holds_all_interior": true,
+     "spearman_vs_uniform": 0.4459376528830578
+    },
+    "dirichlet_band": {
+     "interior_fraction_mean": 0.9955296738910269,
+     "interior_fraction_ci95": [
+      0.9953413003848491,
+      0.9963540611707514
+     ],
+     "eta_mean_interior_mean": 0.27356283278028487,
+     "eta_mean_interior_ci95": [
+      0.24879601612564986,
+      0.2954223666923958
+     ]
+    }
+   },
+   "2010": {
+    "uniform": {
+     "n_pairs": 6553,
+     "interior_fraction": 0.9653593773844041,
+     "n_interior": 6326,
+     "eta_mean_interior": 0.2863947728949309,
+     "eta_median_interior": 0.25,
+     "eta_pct5_interior": 0.16666666666666666,
+     "l1_floor_2eta_mean": 0.5727895457898619,
+     "floor_holds_all_interior": true
+    },
+    "count": {
+     "n_pairs": 6553,
+     "interior_fraction": 0.9656645811078896,
+     "n_interior": 6328,
+     "eta_mean_interior": 0.29449329063171553,
+     "eta_median_interior": 0.2807017543859649,
+     "eta_pct5_interior": 0.07111111111111112,
+     "l1_floor_2eta_mean": 0.5889865812634311,
+     "floor_holds_all_interior": true,
+     "spearman_vs_uniform": 0.466516779736925
+    },
+    "inverse_count": {
+     "n_pairs": 6553,
+     "interior_fraction": 0.9685640164810011,
+     "n_interior": 6347,
+     "eta_mean_interior": 0.14186719215164764,
+     "eta_median_interior": 0.08739617190321415,
+     "eta_pct5_interior": 0.006690454950936664,
+     "l1_floor_2eta_mean": 0.2837343843032953,
+     "floor_holds_all_interior": true,
+     "spearman_vs_uniform": 0.6447453677531919
+    },
+    "dirichlet_band": {
+     "interior_fraction_mean": 0.9671715244925988,
+     "interior_fraction_ci95": [
+      0.9650541736609186,
+      0.979944300320464
+     ],
+     "eta_mean_interior_mean": 0.2660770734000455,
+     "eta_mean_interior_ci95": [
+      0.24809534515535428,
+      0.2839766662404172
+     ]
+    }
+   },
+   "2011": {
+    "uniform": {
+     "n_pairs": 19381,
+     "interior_fraction": 0.2282131984933698,
+     "n_interior": 4423,
+     "eta_mean_interior": 0.34665385484964956,
+     "eta_median_interior": 0.3333333333333333,
+     "eta_pct5_interior": 0.25,
+     "l1_floor_2eta_mean": 0.6933077096992991,
+     "floor_holds_all_interior": true
+    },
+    "count": {
+     "n_pairs": 19381,
+     "interior_fraction": 0.23239254940405552,
+     "n_interior": 4504,
+     "eta_mean_interior": 0.2739886810774973,
+     "eta_median_interior": 0.31212121212121213,
+     "eta_pct5_interior": 0.03608247422680411,
+     "l1_floor_2eta_mean": 0.5479773621549946,
+     "floor_holds_all_interior": true,
+     "spearman_vs_uniform": 0.9945307977582947
+    },
+    "inverse_count": {
+     "n_pairs": 19381,
+     "interior_fraction": 0.22919354006501214,
+     "n_interior": 4442,
+     "eta_mean_interior": 0.18443293544015008,
+     "eta_median_interior": 0.14753209184595914,
+     "eta_pct5_interior": 0.016100178890876567,
+     "l1_floor_2eta_mean": 0.36886587088030015,
+     "floor_holds_all_interior": true,
+     "spearman_vs_uniform": 0.991802237457614
+    },
+    "dirichlet_band": {
+     "interior_fraction_mean": 0.2295812909550591,
+     "interior_fraction_ci95": [
+      0.2282131984933698,
+      0.23510009803415716
+     ],
+     "eta_mean_interior_mean": 0.3037139885203723,
+     "eta_mean_interior_ci95": [
+      0.28389859572640075,
+      0.32490443654438156
+     ]
+    }
+   }
+  }
+ },
+ "verdict": {
+  "interior_fraction_uniform_by_year": {
+   "2009": 0.9953413003848491,
+   "2010": 0.9653593773844041,
+   "2011": 0.2282131984933698
+  },
+  "interior_fraction_dirichlet_ci95_by_year": {
+   "2009": [
+    0.9953413003848491,
+    0.9963540611707514
+   ],
+   "2010": [
+    0.9650541736609186,
+    0.979944300320464
+   ],
+   "2011": [
+    0.2282131984933698,
+    0.23510009803415716
+   ]
+  },
+  "interiority_survives_all_priors": true,
+  "reading": "Contract B needs a non-negligible set of documents whose truth profile sits in the interior of the simplex. If that survives every intent prior, the uniform assumption in E3 is not load-bearing."
+ }
+}

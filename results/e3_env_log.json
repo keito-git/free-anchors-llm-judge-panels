@@ -1,0 +1,31 @@
+{
+ "experiment": "E3_contract_b_semi_synthetic",
+ "timestamp_utc": "2026-08-04T00:01:36Z",
+ "platform": "macOS-26.5.1-arm64-arm-64bit",
+ "hostname": "MacBook-Pro-2.local",
+ "python_version": "3.11.3 (v3.11.3:f3909b8bc8, Apr  4 2023, 20:12:10) [Clang 13.0.0 (clang-1300.0.29.30)]",
+ "numpy_version": "1.26.4",
+ "scipy_version": "1.17.1",
+ "matplotlib_version": "3.11.0",
+ "git_commit": "not_applicable: project is not a git repository",
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "data_files": {
+  "2009qrels.diversity": {
+   "path": "data/trec_web_diversity/2009qrels.diversity.txt",
+   "sha256_prefix": "d1a877f67c02c4cb",
+   "license": "U.S. Government work (NIST TREC) \u2014 public domain"
+  }
+ },
+ "gpu": "NONE \u2014 CPU only (GPU not authorized)",
+ "api_calls": "NONE \u2014 zero cost",
+ "p_intent_assumption": "uniform: P(i|q) = 1/|I_q| for all intents i",
+ "note_ntcir_intent2": "NTCIR INTENT-2 not yet available (application pending). When acquired, replace uniform P(i|q) with voted probabilities. Sensitivity check with count-weighted P(i|q) included.",
+ "note_clueweb": "No ClueWeb document text used. Experiment uses qrels (document IDs + judgments) only.",
+ "provenance_note": "Reproducibility is provided by fixed seeds recorded in each script and in the env block of every result JSON, not by a commit hash."
+}

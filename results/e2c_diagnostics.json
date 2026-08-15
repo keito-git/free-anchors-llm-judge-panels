@@ -1,0 +1,125 @@
+{
+ "env": {
+  "script": "e2c_diagnostics.py",
+  "input": "e2c_realdata_L4.json",
+  "L": 4,
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0,
+  "seeds_radius": [
+   42,
+   123,
+   456
+  ],
+  "n_dirs_radius": 4000,
+  "n_dirs_shrink": 6000,
+  "shrink_seed": 20260804
+ },
+ "D1_constraints_bind": {
+  "m=0_no_kernel_constraint": {
+   "radius_mean": 1.6399705539083547,
+   "per_seed": [
+    1.6522373673184734,
+    1.637917288733653,
+    1.6297570056729376
+   ]
+  },
+  "m=1_GPT": {
+   "radius_mean": 1.0912041687898932,
+   "per_seed": [
+    1.1644178813105488,
+    1.1643012166466378,
+    0.944893408412493
+   ]
+  },
+  "m=2_GPT_Llama": {
+   "radius_mean": 1.0912041687898932,
+   "per_seed": [
+    1.1644178813105488,
+    1.1643012166466378,
+    0.944893408412493
+   ]
+  },
+  "m=3_all": {
+   "radius_mean": 1.0912041687898932,
+   "per_seed": [
+    1.1644178813105488,
+    1.1643012166466378,
+    0.944893408412493
+   ]
+  }
+ },
+ "D1_interpretation": {
+  "kernel_constraints_bind": true,
+  "note": "If m=0 and m=1 agreed, an unchanging radius would be a measurement artefact."
+ },
+ "D2_panel_domination": {
+  "GPT": {
+   "cone_generators": [
+    "Llama",
+    "T5"
+   ],
+   "row_residuals": [
+    0.02398402727049789,
+    0.04691901095477875,
+    0.06652934022476617,
+    0.0603249272264546
+   ],
+   "max_residual": 0.06652934022476617,
+   "dominated": false
+  },
+  "Llama": {
+   "cone_generators": [
+    "GPT",
+    "T5"
+   ],
+   "row_residuals": [
+    0.02307979785320159,
+    0.027424933232504757,
+    0.0,
+    0.001927216424019964
+   ],
+   "max_residual": 0.027424933232504757,
+   "dominated": false
+  },
+  "T5": {
+   "cone_generators": [
+    "GPT",
+    "Llama"
+   ],
+   "row_residuals": [
+    0.009821756535065302,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max_residual": 0.009821756535065302,
+   "dominated": false
+  }
+ },
+ "D2_interpretation": {
+  "any_family_dominated": false,
+  "note": "No family is redundant in the exact sense of Corollary 1(ii)."
+ },
+ "D3_set_vs_diameter": {
+  "n_directions": 6000,
+  "n_directions_shrunk": 29,
+  "frac_directions_shrunk": 0.004833333333333334,
+  "step_ratio_t3_over_t1": {
+   "mean": 0.999720050664745,
+   "median": 1.0,
+   "min": 0.8794665994056102
+  },
+  "radius_m1": 1.0536771746813063,
+  "radius_m3": 1.0536771746813063,
+  "radius_difference": 0.0,
+  "mean_displacement_m1": 0.20900098348588173,
+  "mean_displacement_m3": 0.2088718214731879,
+  "mean_displacement_reduction_pct": 0.06179971526428796
+ },
+ "D3_interpretation": {
+  "set_strictly_shrinks": true,
+  "diameter_unchanged": true,
+  "note": "Real-data instance of the two-layer separation: adding families removes admissible gauges, but the extremal direction survives, so the identification-set diameter is unchanged."
+ }
+}

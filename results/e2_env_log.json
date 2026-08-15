@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-08-04T08:53:12.622520",
+  "hostname": "MacBook-Pro-2.local",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "python_version": "3.11.3 (v3.11.3:f3909b8bc8, Apr  4 2023, 20:12:10) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "1.5.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.7.2",
+    "matplotlib": "3.11.0"
+  },
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "n_bootstrap": 2000,
+  "n_judges": 33,
+  "n_items": 4423,
+  "data_fingerprint": "93c93ecc17b234765a782a58e13067b4",
+  "definitions": {
+    "A": {
+      "GPT": 7,
+      "Llama": 19,
+      "T5": 7
+    },
+    "B": {
+      "GPT_T5": 14,
+      "Llama": 19
+    },
+    "C": {
+      "GPT": 7,
+      "Llama_8B": 18,
+      "Llama_70B": 1,
+      "T5": 7
+    }
+  },
+  "gpu_used": false,
+  "api_calls": 0,
+  "data_dir": "<repo>",
+  "results_dir": "<repo>",
+  "note": "Full family mapping (33/33 judges) from Ito (2026-08-04). Three family definitions pre-registered by the experiment lead. CPU-only, zero API calls, zero GPU."
+}

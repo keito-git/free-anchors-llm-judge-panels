@@ -1,0 +1,115 @@
+{
+ "env": {
+  "script": "e17_partition_robustness.py",
+  "seeds": [
+   42,
+   123,
+   456,
+   789,
+   1024,
+   20260804
+  ],
+  "n_dirs_per_seed": 4000,
+  "prototypes": "gold-conditioned mean (identical to E2c)",
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "partitions": {
+  "A": {
+   "description": "model lineage (paper default)",
+   "families": [
+    "GPT",
+    "Llama",
+    "T5"
+   ],
+   "judges_per_family": {
+    "GPT": 7,
+    "Llama": 19,
+    "T5": 7
+   },
+   "diameter": {
+    "m=0": 1.6522373673184734,
+    "m=1": 1.1644178813105488,
+    "m=2": 1.1644178813105488,
+    "m=3": 1.1644178813105488
+   },
+   "first_family_reduction": 0.4878194860079246,
+   "max_spread_after_first": 0.0,
+   "flat_after_first_family": true
+  },
+  "C": {
+   "description": "lineage with Llama split by fine-tuning",
+   "families": [
+    "GPT",
+    "Llama-zs",
+    "Llama-ft",
+    "T5"
+   ],
+   "judges_per_family": {
+    "GPT": 7,
+    "Llama-zs": 14,
+    "Llama-ft": 5,
+    "T5": 7
+   },
+   "diameter": {
+    "m=0": 1.6522373673184734,
+    "m=1": 1.1644178813105488,
+    "m=2": 1.0536771746813063,
+    "m=3": 1.0536771746813063,
+    "m=4": 1.0536771746813063
+   },
+   "first_family_reduction": 0.4878194860079246,
+   "max_spread_after_first": 0.11074070662924251,
+   "flat_after_first_family": false
+  },
+  "D": {
+   "description": "architecture",
+   "families": [
+    "decoder-only",
+    "encoder-decoder"
+   ],
+   "judges_per_family": {
+    "decoder-only": 26,
+    "encoder-decoder": 7
+   },
+   "diameter": {
+    "m=0": 1.6522373673184734,
+    "m=1": 1.2821525252097254,
+    "m=2": 1.2821525252097254
+   },
+   "first_family_reduction": 0.3700848421087479,
+   "max_spread_after_first": 0.0,
+   "flat_after_first_family": true
+  },
+  "E": {
+   "description": "parameter size band",
+   "families": [
+    "proprietary",
+    "8B",
+    "70B",
+    "sub-1B"
+   ],
+   "judges_per_family": {
+    "proprietary": 7,
+    "8B": 18,
+    "70B": 1,
+    "sub-1B": 7
+   },
+   "diameter": {
+    "m=0": 1.6522373673184734,
+    "m=1": 1.1644178813105488,
+    "m=2": 1.1644178813105488,
+    "m=3": 1.0536771746813063,
+    "m=4": 1.0536771746813063
+   },
+   "first_family_reduction": 0.4878194860079246,
+   "max_spread_after_first": 0.11074070662924251,
+   "flat_after_first_family": false
+  }
+ },
+ "summary": {
+  "flat_after_first_family_in_all_partitions": false,
+  "n_partitions": 4
+ }
+}

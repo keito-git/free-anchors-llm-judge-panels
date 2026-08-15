@@ -1,0 +1,60 @@
+{
+ "env": {
+  "script": "e5_conditional_independence.py",
+  "n_items": 4423,
+  "n_judges": 33,
+  "n_bootstrap": 2000,
+  "bootstrap_unit": "item (cluster bootstrap)",
+  "seed": 20260804,
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "raw_correlation": {
+  "within_mean": 0.6479708323493079,
+  "cross_mean": 0.5372487854362672,
+  "gap": 0.11072204691304066,
+  "n_within_pairs": 213,
+  "n_cross_pairs": 315,
+  "note": "comparable to E2 measurement 3; cannot separate interpretations A and B"
+ },
+ "residual_correlation": {
+  "definition": "r_ij = y_ij - E[y | family(j), gold_i]",
+  "within_mean": 0.5721566199081611,
+  "cross_mean": 0.44999539934583754,
+  "gap": 0.12216122056232359,
+  "cross_ci95": [
+   0.43843927654384446,
+   0.4606566608999459
+  ],
+  "within_ci95": [
+   0.5620892077735523,
+   0.5813068875072748
+  ],
+  "gap_ci95": [
+   0.11682019525024834,
+   0.12785668661346603
+  ],
+  "cross_excludes_zero": true
+ },
+ "per_family_pair_residual_cross": {
+  "GPT-Llama": {
+   "mean": 0.5520168006972923,
+   "n_pairs": 133
+  },
+  "GPT-T5": {
+   "mean": 0.37087865399257564,
+   "n_pairs": 49
+  },
+  "Llama-T5": {
+   "mean": 0.377122272598216,
+   "n_pairs": 133
+  }
+ },
+ "verdict": {
+  "interpretation_A_supported": false,
+  "interpretation_B_supported": true,
+  "residual_cross_mean": 0.44999539934583754,
+  "reading": "Interpretation A (model correct, agreement induced by the shared truth) predicts a residual cross-family correlation of zero. Interpretation B (extra shared dependence, model misspecified) predicts it stays clearly positive. The measured value and its item-level bootstrap interval decide between them."
+ }
+}

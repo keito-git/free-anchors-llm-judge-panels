@@ -1,0 +1,97 @@
+{
+  "env": {
+    "script": "e3_floor_check.py",
+    "date": "2026-08-04",
+    "python_version": "3.11.3 (v3.11.3:f3909b8bc8, Apr  4 2023, 20:12:10) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "numpy_version": "1.26.4",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "hostname": "MacBook-Pro-2.local",
+    "git_commit": "unavailable",
+    "data_file": "data/trec_web_diversity/2009qrels.diversity.txt",
+    "data_sha256": "cfdcba75db42dc13de3bbf7bfefe0a8907b3872a54e95372bdaaebf685572934",
+    "gpu_used": false,
+    "note": "Check A: G^0 gauge orbit is m-free (C_f @ S >= 0 for column-stochastic S). Check B: kernel nesting confirmed (kernels_max[:m]), norm is half-l1."
+  },
+  "check_a": {
+    "m_values_checked": [
+      2,
+      3,
+      4,
+      6,
+      10
+    ],
+    "per_m": {
+      "2": {
+        "g0_mean_max_delta": 0.6956937849851708,
+        "g0_mean_analytic_delta": 0.6990265906932573,
+        "g0_mean_eta": 0.3009734093067426,
+        "note": "G^0 is m-free: identical result for all m (confirmed)"
+      },
+      "3": {
+        "g0_mean_max_delta": 0.6956937849851708,
+        "g0_mean_analytic_delta": 0.6990265906932573,
+        "g0_mean_eta": 0.3009734093067426,
+        "note": "G^0 is m-free: identical result for all m (confirmed)"
+      },
+      "4": {
+        "g0_mean_max_delta": 0.6956937849851708,
+        "g0_mean_analytic_delta": 0.6990265906932573,
+        "g0_mean_eta": 0.3009734093067426,
+        "note": "G^0 is m-free: identical result for all m (confirmed)"
+      },
+      "6": {
+        "g0_mean_max_delta": 0.6956937849851708,
+        "g0_mean_analytic_delta": 0.6990265906932573,
+        "g0_mean_eta": 0.3009734093067426,
+        "note": "G^0 is m-free: identical result for all m (confirmed)"
+      },
+      "10": {
+        "g0_mean_max_delta": 0.6956937849851708,
+        "g0_mean_analytic_delta": 0.6990265906932573,
+        "g0_mean_eta": 0.3009734093067426,
+        "note": "G^0 is m-free: identical result for all m (confirmed)"
+      }
+    },
+    "profile_count": 4914,
+    "g0_mean_max_delta": 0.6956937849851708,
+    "g0_mean_analytic_delta": 0.6990265906932573,
+    "g0_mean_eta": 0.3009734093067426,
+    "floor_all_satisfied": true,
+    "floor_fraction_satisfied": 1.0,
+    "l1_floor_2eta_mean": 0.6019468186134852,
+    "l1_diameter_mean": 1.3913875699703415,
+    "l1_floor_satisfied": true,
+    "m_invariance_confirmed": true
+  },
+  "check_b": {
+    "kernel_nesting": {
+      "confirmed": true,
+      "method": "kernels_max[:m] in run_seed() — m=2 set is first 2 of m=10 set",
+      "implication": "Kernel constraints are nested: G_10 subset G_7 subset ... subset G_2. Diameter is non-increasing with m (antitone), consistent with theory."
+    },
+    "norm_convention": {
+      "m2_measures": "max |pi_new - pi| (half-l1 norm)",
+      "l1_formula": "||p' - p||_1 = 2 * |pi' - pi|",
+      "analytic_floor_units": "2*eta (full l1)",
+      "analytic_floor_in_m2_units": "eta (half-l1)",
+      "g0_max_delta_formula": "max(pi, 1-pi) = 1 - eta  (half-l1)",
+      "g0_l1_diameter_formula": "2*(1-eta)  (full l1)",
+      "floor_satisfied": "2*(1-eta) >= 2*eta iff eta <= 0.5 (always true for interior profiles)"
+    },
+    "two_part_decomposition": {
+      "part_i_signed_A_inv": "Family-specific ambiguity. Requires C_f @ A^{-1} >= 0 for each family. More families -> more constraints -> smaller feasible A set -> diameter shrinks with m. Measured M2 decreasing: 0.516 (m=2) -> 0.443 (m=10). CONFIRMED.",
+      "part_ii_nonneg_A_inv": "Common confusion (G^0). A = S^{-1} for column-stochastic S. C_f @ S >= 0 automatically (both C_f and S non-negative). Diameter = max(pi, 1-pi) = 1-eta, CONSTANT across m. l1-floor 2*eta is satisfied. CONFIRMED."
+    }
+  },
+  "figures": {
+    "F5e_combined_gauge_pdf": "paper/figures/e3_F5e_combined_gauge.pdf",
+    "F5e_combined_gauge_png": "paper/figures/e3_F5e_combined_gauge.png"
+  },
+  "summary": {
+    "check_a_verdict": "CONFIRMED: G^0 diameter is constant across all m (mean max_delta = 0.6957 for all m). l1-floor 2*eta = 0.6019 <= l1-diameter = 1.3914. Proposition F1 holds.",
+    "check_b_nesting": "CONFIRMED (kernels_max[:m], exact nesting)",
+    "check_b_norm": "M2 uses half-l1 (max|pi'-pi|). the analytic 2*eta floor in l1 = eta in M2 units. G^0 max_delta = 1 - eta = 0.6990 >= eta = 0.3010. Floor satisfied.",
+    "corollary_1_interpretation": "E3 empirically demonstrates both parts of Corollary 1: (i) Signed A^{-1} part shrinks with m (M2: 0.516->0.443), (ii) G^0 non-negative part is m-free (constant 1-eta), with explicit l1-floor 2*eta."
+  },
+  "elapsed_seconds": 2.44
+}

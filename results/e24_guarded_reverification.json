@@ -1,0 +1,56 @@
+{
+ "env": {
+  "script": "e24_guarded_reverification.py",
+  "seeds": [
+   42,
+   123,
+   456,
+   789,
+   1024,
+   20260804
+  ],
+  "sampled_directions": 4000,
+  "optimiser": "Nelder-Mead, 16 starts, maxiter 1000",
+  "singular_value_floor": 0.001,
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "m0_closed_form": {
+  "eta": 0.035192322224741494,
+  "two_times_one_minus_eta": 1.929615355550517,
+  "reported_m0_optimum": 1.929614528,
+  "matches": true,
+  "attained_by": "A = e_j 1', which is singular and outside GL(L,R)",
+  "reading": "the m = 0 diameter is a supremum in closed form, fixed by eta alone, and is not an informative baseline"
+ },
+ "e2c_prototypes": {
+  "m=1": {
+   "unguarded": 1.6335827098979276,
+   "guarded": 1.6335827098979276,
+   "difference": 0.0
+  },
+  "m=2": {
+   "unguarded": 1.627763094433784,
+   "guarded": 1.627763094433784,
+   "difference": 0.0
+  },
+  "m=3": {
+   "unguarded": 1.627763094433784,
+   "guarded": 1.627763094433784,
+   "difference": 0.0
+  },
+  "reduction_m1_to_m3_guarded_pct": 0.35624859573271106
+ },
+ "anchor_pair": {
+  "no_anchor": {
+   "unguarded": 1.1233434144439205,
+   "guarded": 1.1233434144439205
+  },
+  "two_anchors": {
+   "unguarded": 0.977661359395932,
+   "guarded": 0.977661359395932
+  },
+  "reduction_pct_guarded": 12.968612552031056
+ }
+}

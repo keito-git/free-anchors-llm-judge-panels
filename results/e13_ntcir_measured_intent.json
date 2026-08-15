@@ -1,0 +1,101 @@
+{
+ "env": {
+  "script": "e13_ntcir_measured_intent.py",
+  "source": "NTCIR-10 INTENT-2 Document Ranking subtask",
+  "L": 5,
+  "levels": [
+   "L0",
+   "L1",
+   "L2",
+   "L3",
+   "L4"
+  ],
+  "gauge_dimension_L_times_L_minus_1": 20,
+  "intent_prior": "measured from assessor voting (Iprob), not assumed",
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "subtasks": {
+  "Japanese": {
+   "n_topics": 67,
+   "judged_intent_coverage_mean": 0.3508788323766297,
+   "measured_prior": {
+    "n_pairs": 2497,
+    "interior_fraction": 0.815378454144974,
+    "n_interior": 2036,
+    "full_support_fraction": 0.0,
+    "eta_min_over_all": 0.0,
+    "eta_mean_interior": 0.0,
+    "eta_pct5_interior": 0.0,
+    "eta_median_interior": 0.0,
+    "l1_floor_2eta_mean_interior": 0.0,
+    "mean_levels_with_mass": 2.041649979975971
+   },
+   "uniform_prior": {
+    "n_pairs": 2497,
+    "interior_fraction": 0.815378454144974,
+    "n_interior": 2036,
+    "full_support_fraction": 0.0,
+    "eta_min_over_all": 0.0,
+    "eta_mean_interior": 0.0,
+    "eta_pct5_interior": 0.0,
+    "eta_median_interior": 0.0,
+    "l1_floor_2eta_mean_interior": 0.0,
+    "mean_levels_with_mass": 2.041649979975971
+   },
+   "uniform_vs_measured": {
+    "l1_difference_mean": 0.13109425263968325,
+    "l1_difference_median": 0.10526413435100918,
+    "l1_difference_p95": 0.39999939999940004,
+    "fraction_with_l1_diff_above_0p10": 0.5314377252703244,
+    "eta_mean_measured": 0.0,
+    "eta_mean_uniform": 0.0
+   }
+  },
+  "Chinese": {
+   "n_topics": 75,
+   "judged_intent_coverage_mean": 0.3328240518055333,
+   "measured_prior": {
+    "n_pairs": 3564,
+    "interior_fraction": 0.5617283950617284,
+    "n_interior": 2002,
+    "full_support_fraction": 0.0,
+    "eta_min_over_all": 0.0,
+    "eta_mean_interior": 0.0,
+    "eta_pct5_interior": 0.0,
+    "eta_median_interior": 0.0,
+    "l1_floor_2eta_mean_interior": 0.0,
+    "mean_levels_with_mass": 1.5827721661054994
+   },
+   "uniform_prior": {
+    "n_pairs": 3564,
+    "interior_fraction": 0.5617283950617284,
+    "n_interior": 2002,
+    "full_support_fraction": 0.0,
+    "eta_min_over_all": 0.0,
+    "eta_mean_interior": 0.0,
+    "eta_pct5_interior": 0.0,
+    "eta_median_interior": 0.0,
+    "l1_floor_2eta_mean_interior": 0.0,
+    "mean_levels_with_mass": 1.5827721661054994
+   },
+   "uniform_vs_measured": {
+    "l1_difference_mean": 0.047785327109384615,
+    "l1_difference_median": 1.1102230246251565e-16,
+    "l1_difference_p95": 0.23529230104073384,
+    "fraction_with_l1_diff_above_0p10": 0.17199775533108866,
+    "eta_mean_measured": 0.0,
+    "eta_mean_uniform": 0.0
+   }
+  }
+ },
+ "summary": {
+  "interior_fraction_by_subtask": {
+   "Japanese": 0.815378454144974,
+   "Chinese": 0.5617283950617284
+  },
+  "distribution_contract_supported_in_both": true,
+  "reading": "The distribution contract needs truth profiles that genuinely sit in the interior of the simplex. Here the intent prior is measured rather than assumed, and the profile lives on five levels rather than two, so the gauge has dimension twenty."
+ }
+}

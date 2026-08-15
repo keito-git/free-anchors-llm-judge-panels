@@ -1,0 +1,302 @@
+{
+ "env": {
+  "script": "e14_e12_sensitivity.py",
+  "n_dirs_per_seed": 2000,
+  "radius_seeds": [
+   42,
+   123,
+   456
+  ],
+  "draw_seeds": [
+   7,
+   101,
+   202,
+   303,
+   404
+  ],
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "configs": [
+  {
+   "q_near": 0.05,
+   "q_amb": 0.5,
+   "near_pool_size": 221,
+   "amb_pool_size": 2212,
+   "near_max_l1_vertex_distance": 0.0,
+   "per_draw": [
+    {
+     "draw_seed": 7,
+     "radius_0": 0.3983500666449049,
+     "radius_2": 0.24271832246133096,
+     "radius_8": 0.24271832246133096,
+     "ratio_0_over_2": 1.6412031139856311,
+     "saturated_2_to_8": true
+    },
+    {
+     "draw_seed": 101,
+     "radius_0": 0.4092470409378912,
+     "radius_2": 0.25427410978452397,
+     "radius_8": 0.25427410978452397,
+     "ratio_0_over_2": 1.6094719249423146,
+     "saturated_2_to_8": true
+    },
+    {
+     "draw_seed": 202,
+     "radius_0": 0.3983500666449049,
+     "radius_2": 0.24271832246133096,
+     "radius_8": 0.24271832246133096,
+     "ratio_0_over_2": 1.6412031139856311,
+     "saturated_2_to_8": true
+    },
+    {
+     "draw_seed": 303,
+     "radius_0": 0.2882149813642717,
+     "radius_2": 0.24271832246133096,
+     "radius_8": 0.24271832246133096,
+     "ratio_0_over_2": 1.187446330551288,
+     "saturated_2_to_8": true
+    },
+    {
+     "draw_seed": 404,
+     "radius_0": 0.41799033985985545,
+     "radius_2": 0.24271832246133096,
+     "radius_8": 0.24271832246133096,
+     "ratio_0_over_2": 1.7221210810174754,
+     "saturated_2_to_8": true
+    }
+   ],
+   "reduction_ratio_mean": 1.5602891128964682,
+   "reduction_ratio_sd": 0.21255259725422398,
+   "reduction_ratio_min": 1.187446330551288,
+   "reduction_ratio_max": 1.7221210810174754,
+   "saturation_holds_all_draws": true
+  },
+  {
+   "q_near": 0.1,
+   "q_amb": 0.5,
+   "near_pool_size": 442,
+   "amb_pool_size": 2212,
+   "near_max_l1_vertex_distance": 0.06060606060606055,
+   "per_draw": [
+    {
+     "draw_seed": 7,
+     "radius_0": 0.3983500666449049,
+     "radius_2": 0.24271832246133096,
+     "radius_8": 0.24271832246133096,
+     "ratio_0_over_2": 1.6412031139856311,
+     "saturated_2_to_8": true
+    },
+    {
+     "draw_seed": 101,
+     "radius_0": 0.4092470409378912,
+     "radius_2": 0.25427410978452397,
+     "radius_8": 0.25427410978452397,
+     "ratio_0_over_2": 1.6094719249423146,
+     "saturated_2_to_8": true
+    },
+    {
+     "draw_seed": 202,
+     "radius_0": 0.3983500666449049,
+     "radius_2": 0.24271832246133096,
+     "radius_8": 0.24271832246133096,
+     "ratio_0_over_2": 1.6412031139856311,
+     "saturated_2_to_8": true
+    },
+    {
+     "draw_seed": 303,
+     "radius_0": 0.2882149813642717,
+     "radius_2": 0.24271832246133096,
+     "radius_8": 0.24271832246133096,
+     "ratio_0_over_2": 1.187446330551288,
+     "saturated_2_to_8": true
+    },
+    {
+     "draw_seed": 404,
+     "radius_0": 0.41799033985985545,
+     "radius_2": 0.24271832246133096,
+     "radius_8": 0.24271832246133096,
+     "ratio_0_over_2": 1.7221210810174754,
+     "saturated_2_to_8": true
+    }
+   ],
+   "reduction_ratio_mean": 1.5602891128964682,
+   "reduction_ratio_sd": 0.21255259725422398,
+   "reduction_ratio_min": 1.187446330551288,
+   "reduction_ratio_max": 1.7221210810174754,
+   "saturation_holds_all_draws": true
+  },
+  {
+   "q_near": 0.2,
+   "q_amb": 0.5,
+   "near_pool_size": 884,
+   "amb_pool_size": 2212,
+   "near_max_l1_vertex_distance": 0.18181818181818188,
+   "per_draw": [
+    {
+     "draw_seed": 7,
+     "radius_0": 0.3983500666449049,
+     "radius_2": 0.23217334311134022,
+     "radius_8": 0.24271832246133096,
+     "ratio_0_over_2": 1.7157441991687805,
+     "saturated_2_to_8": false
+    },
+    {
+     "draw_seed": 101,
+     "radius_0": 0.4092470409378912,
+     "radius_2": 0.30042765258858883,
+     "radius_8": 0.25427410978452397,
+     "ratio_0_over_2": 1.3622149539553925,
+     "saturated_2_to_8": false
+    },
+    {
+     "draw_seed": 202,
+     "radius_0": 0.3983500666449049,
+     "radius_2": 0.24271832246133096,
+     "radius_8": 0.24271832246133096,
+     "ratio_0_over_2": 1.6412031139856311,
+     "saturated_2_to_8": true
+    },
+    {
+     "draw_seed": 303,
+     "radius_0": 0.2882149813642717,
+     "radius_2": 0.23648173870645203,
+     "radius_8": 0.24271832246133096,
+     "ratio_0_over_2": 1.2187621037497396,
+     "saturated_2_to_8": false
+    },
+    {
+     "draw_seed": 404,
+     "radius_0": 0.41799033985985545,
+     "radius_2": 0.24271832246133096,
+     "radius_8": 0.24271832246133096,
+     "ratio_0_over_2": 1.7221210810174754,
+     "saturated_2_to_8": true
+    }
+   ],
+   "reduction_ratio_mean": 1.5320090903754036,
+   "reduction_ratio_sd": 0.22846127536963046,
+   "reduction_ratio_min": 1.2187621037497396,
+   "reduction_ratio_max": 1.7221210810174754,
+   "saturation_holds_all_draws": false
+  },
+  {
+   "q_near": 0.1,
+   "q_amb": 0.3,
+   "near_pool_size": 442,
+   "amb_pool_size": 1327,
+   "near_max_l1_vertex_distance": 0.06060606060606055,
+   "per_draw": [
+    {
+     "draw_seed": 7,
+     "radius_0": 0.538965688554432,
+     "radius_2": 0.24271832246133096,
+     "radius_8": 0.24271832246133096,
+     "ratio_0_over_2": 2.2205397725600142,
+     "saturated_2_to_8": true
+    },
+    {
+     "draw_seed": 101,
+     "radius_0": 0.538965688554432,
+     "radius_2": 0.26532725661141254,
+     "radius_8": 0.26532725661141254,
+     "ratio_0_over_2": 2.0313242425137616,
+     "saturated_2_to_8": true
+    },
+    {
+     "draw_seed": 202,
+     "radius_0": 0.5185759992031328,
+     "radius_2": 0.24271832246133096,
+     "radius_8": 0.24271832246133096,
+     "ratio_0_over_2": 2.1365342094672335,
+     "saturated_2_to_8": true
+    },
+    {
+     "draw_seed": 303,
+     "radius_0": 0.5185759992031328,
+     "radius_2": 0.24271832246133096,
+     "radius_8": 0.24271832246133096,
+     "ratio_0_over_2": 2.1365342094672335,
+     "saturated_2_to_8": true
+    },
+    {
+     "draw_seed": 404,
+     "radius_0": 0.616013015614205,
+     "radius_2": 0.2554089707728022,
+     "radius_8": 0.2554089707728022,
+     "ratio_0_over_2": 2.4118691436338633,
+     "saturated_2_to_8": true
+    }
+   ],
+   "reduction_ratio_mean": 2.1873603155284216,
+   "reduction_ratio_sd": 0.14231912420921566,
+   "reduction_ratio_min": 2.0313242425137616,
+   "reduction_ratio_max": 2.4118691436338633,
+   "saturation_holds_all_draws": true
+  },
+  {
+   "q_near": 0.1,
+   "q_amb": 0.7,
+   "near_pool_size": 442,
+   "amb_pool_size": 3097,
+   "near_max_l1_vertex_distance": 0.06060606060606055,
+   "per_draw": [
+    {
+     "draw_seed": 7,
+     "radius_0": 0.35731053248317024,
+     "radius_2": 0.24271832246133096,
+     "radius_8": 0.24271832246133096,
+     "ratio_0_over_2": 1.4721201467602254,
+     "saturated_2_to_8": true
+    },
+    {
+     "draw_seed": 101,
+     "radius_0": 0.3745358164989366,
+     "radius_2": 0.24271832246133096,
+     "radius_8": 0.24271832246133096,
+     "ratio_0_over_2": 1.543088353202533,
+     "saturated_2_to_8": true
+    },
+    {
+     "draw_seed": 202,
+     "radius_0": 0.2924226683362401,
+     "radius_2": 0.24271832246133096,
+     "radius_8": 0.24271832246133096,
+     "ratio_0_over_2": 1.2047820097422923,
+     "saturated_2_to_8": true
+    },
+    {
+     "draw_seed": 303,
+     "radius_0": 0.25185130311269066,
+     "radius_2": 0.24271832246133096,
+     "radius_8": 0.24271832246133096,
+     "ratio_0_over_2": 1.0376278995287418,
+     "saturated_2_to_8": true
+    },
+    {
+     "draw_seed": 404,
+     "radius_0": 0.27680700884161313,
+     "radius_2": 0.24271832246133096,
+     "radius_8": 0.24271832246133096,
+     "ratio_0_over_2": 1.1404454597189013,
+     "saturated_2_to_8": true
+    }
+   ],
+   "reduction_ratio_mean": 1.2796127737905387,
+   "reduction_ratio_sd": 0.2179462855382215,
+   "reduction_ratio_min": 1.0376278995287418,
+   "reduction_ratio_max": 1.543088353202533,
+   "saturation_holds_all_draws": true
+  }
+ ],
+ "summary": {
+  "n_configurations": 5,
+  "n_draws_per_config": 5,
+  "reduction_ratio_overall_mean": 1.62391208109746,
+  "reduction_ratio_overall_min": 1.0376278995287418,
+  "reduction_ratio_overall_max": 2.4118691436338633,
+  "always_reduces": true,
+  "saturation_holds_everywhere": false
+ }
+}

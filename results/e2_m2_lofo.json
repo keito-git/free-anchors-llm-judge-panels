@@ -1,0 +1,311 @@
+{
+  "A": {
+    "definition": "A",
+    "lofo_results": {
+      "GPT": {
+        "family_held_out": "GPT",
+        "family_training": [
+          "Llama",
+          "T5"
+        ],
+        "n_judges_held_out": 7,
+        "n_judges_training": 26,
+        "n_items": 4423,
+        "spearman_rho_raw": {
+          "value": 0.8412206898750515,
+          "p_value": 0.0,
+          "p_fisher_z": 0.0,
+          "bootstrap_ci_95pct": [
+            0.8319845454814075,
+            0.8503223436009169
+          ]
+        },
+        "spearman_rho_calibrated": {
+          "value": 0.8412212307844184,
+          "p_value": 0.0
+        },
+        "ols_calibration": {
+          "slope": 1.0510068083089232,
+          "intercept": -0.26654933439054973,
+          "r_squared": 0.6628103472407681
+        },
+        "cohen_kappa_w": 0.6237615110857508,
+        "rmse": 0.5243917984796375,
+        "mae": 0.3912111409889042
+      },
+      "Llama": {
+        "family_held_out": "Llama",
+        "family_training": [
+          "GPT",
+          "T5"
+        ],
+        "n_judges_held_out": 19,
+        "n_judges_training": 14,
+        "n_items": 4423,
+        "spearman_rho_raw": {
+          "value": 0.8735049863444448,
+          "p_value": 0.0,
+          "p_fisher_z": 0.0,
+          "bootstrap_ci_95pct": [
+            0.8654251115921534,
+            0.8806350546961741
+          ]
+        },
+        "spearman_rho_calibrated": {
+          "value": 0.873565710752009,
+          "p_value": 0.0
+        },
+        "ols_calibration": {
+          "slope": 0.869974547491619,
+          "intercept": 0.20879077787018885,
+          "r_squared": 0.795427292047443
+        },
+        "cohen_kappa_w": 0.721317141223611,
+        "rmse": 0.33393318622089135,
+        "mae": 0.26586150569118777
+      },
+      "T5": {
+        "family_held_out": "T5",
+        "family_training": [
+          "GPT",
+          "Llama"
+        ],
+        "n_judges_held_out": 7,
+        "n_judges_training": 26,
+        "n_items": 4423,
+        "spearman_rho_raw": {
+          "value": 0.8037461769463505,
+          "p_value": 0.0,
+          "p_fisher_z": 0.0,
+          "bootstrap_ci_95pct": [
+            0.7930737496422153,
+            0.8130740117243297
+          ]
+        },
+        "spearman_rho_calibrated": {
+          "value": 0.8037447476548915,
+          "p_value": 0.0
+        },
+        "ols_calibration": {
+          "slope": 0.7322835643404382,
+          "intercept": 0.331785213282331,
+          "r_squared": 0.6191643149796606
+        },
+        "cohen_kappa_w": 0.5618811145633504,
+        "rmse": 0.4520753857125054,
+        "mae": 0.35978803662465375
+      }
+    },
+    "caveats": [
+      "LOFO prediction uses item-level mean scores (not instance-level) as both predictor and target. This measures family-level consistency, not individual-judge generalization.",
+      "Calibration (OLS) is fitted and evaluated on the same N=4423 items; Spearman rho is thus not a held-out estimate."
+    ]
+  },
+  "B": {
+    "definition": "B",
+    "lofo_results": {
+      "GPT_T5": {
+        "family_held_out": "GPT_T5",
+        "family_training": [
+          "Llama"
+        ],
+        "n_judges_held_out": 14,
+        "n_judges_training": 19,
+        "n_items": 4423,
+        "spearman_rho_raw": {
+          "value": 0.8736162816543389,
+          "p_value": 0.0,
+          "p_fisher_z": 0.0,
+          "bootstrap_ci_95pct": [
+            0.8656116444192492,
+            0.8807918488821849
+          ]
+        },
+        "spearman_rho_calibrated": {
+          "value": 0.8736162816543389,
+          "p_value": 0.0
+        },
+        "ols_calibration": {
+          "slope": 0.9143109925926951,
+          "intercept": -0.025314149027597432,
+          "r_squared": 0.7954272920474426
+        },
+        "cohen_kappa_w": 0.7083881625477825,
+        "rmse": 0.3423365570151796,
+        "mae": 0.262054080392698
+      },
+      "Llama": {
+        "family_held_out": "Llama",
+        "family_training": [
+          "GPT_T5"
+        ],
+        "n_judges_held_out": 19,
+        "n_judges_training": 14,
+        "n_items": 4423,
+        "spearman_rho_raw": {
+          "value": 0.8736162816543389,
+          "p_value": 0.0,
+          "p_fisher_z": 0.0,
+          "bootstrap_ci_95pct": [
+            0.8656116444192492,
+            0.8807918488821848
+          ]
+        },
+        "spearman_rho_calibrated": {
+          "value": 0.8736162816543389,
+          "p_value": 0.0
+        },
+        "ols_calibration": {
+          "slope": 0.8699745474916188,
+          "intercept": 0.20879077787018896,
+          "r_squared": 0.7954272920474426
+        },
+        "cohen_kappa_w": 0.721317141223611,
+        "rmse": 0.33393318622089135,
+        "mae": 0.26586150569118777
+      }
+    },
+    "caveats": [
+      "LOFO prediction uses item-level mean scores (not instance-level) as both predictor and target. This measures family-level consistency, not individual-judge generalization.",
+      "Calibration (OLS) is fitted and evaluated on the same N=4423 items; Spearman rho is thus not a held-out estimate."
+    ]
+  },
+  "C": {
+    "definition": "C",
+    "lofo_results": {
+      "GPT": {
+        "family_held_out": "GPT",
+        "family_training": [
+          "Llama_8B",
+          "Llama_70B",
+          "T5"
+        ],
+        "n_judges_held_out": 7,
+        "n_judges_training": 26,
+        "n_items": 4423,
+        "spearman_rho_raw": {
+          "value": 0.8580620428358611,
+          "p_value": 0.0,
+          "p_fisher_z": 0.0,
+          "bootstrap_ci_95pct": [
+            0.8497276765685412,
+            0.8665703734599803
+          ]
+        },
+        "spearman_rho_calibrated": {
+          "value": 0.8580618618852583,
+          "p_value": 0.0
+        },
+        "ols_calibration": {
+          "slope": 0.9520516806852354,
+          "intercept": -0.22228539699670213,
+          "r_squared": 0.6994246132652354
+        },
+        "cohen_kappa_w": 0.650146135270049,
+        "rmse": 0.49510290941046203,
+        "mae": 0.3642503049389572
+      },
+      "Llama_8B": {
+        "family_held_out": "Llama_8B",
+        "family_training": [
+          "GPT",
+          "Llama_70B",
+          "T5"
+        ],
+        "n_judges_held_out": 18,
+        "n_judges_training": 15,
+        "n_items": 4423,
+        "spearman_rho_raw": {
+          "value": 0.8911525303415305,
+          "p_value": 0.0,
+          "p_fisher_z": 0.0,
+          "bootstrap_ci_95pct": [
+            0.8840677398686383,
+            0.8975346296179394
+          ]
+        },
+        "spearman_rho_calibrated": {
+          "value": 0.8911857345524112,
+          "p_value": 0.0
+        },
+        "ols_calibration": {
+          "slope": 0.7927702600553672,
+          "intercept": 0.19287433652924968,
+          "r_squared": 0.8248474709384691
+        },
+        "cohen_kappa_w": 0.7501379146022273,
+        "rmse": 0.3043037962018812,
+        "mae": 0.24037426336569268
+      },
+      "Llama_70B": {
+        "family_held_out": "Llama_70B",
+        "family_training": [
+          "GPT",
+          "Llama_8B",
+          "T5"
+        ],
+        "n_judges_held_out": 1,
+        "n_judges_training": 32,
+        "n_items": 4423,
+        "spearman_rho_raw": {
+          "value": 0.8204373568694525,
+          "p_value": 0.0,
+          "p_fisher_z": 0.0,
+          "bootstrap_ci_95pct": [
+            0.8108146720970414,
+            0.8300344082250151
+          ]
+        },
+        "spearman_rho_calibrated": {
+          "value": 0.8204380777085377,
+          "p_value": 0.0
+        },
+        "ols_calibration": {
+          "slope": 1.273362949952181,
+          "intercept": 0.0017011952407179898,
+          "r_squared": 0.6897185919038665
+        },
+        "cohen_kappa_w": 0.6720768480825445,
+        "rmse": 0.622042213570821,
+        "mae": 0.4537830245145257
+      },
+      "T5": {
+        "family_held_out": "T5",
+        "family_training": [
+          "GPT",
+          "Llama_8B",
+          "Llama_70B"
+        ],
+        "n_judges_held_out": 7,
+        "n_judges_training": 26,
+        "n_items": 4423,
+        "spearman_rho_raw": {
+          "value": 0.7915030767756073,
+          "p_value": 0.0,
+          "p_fisher_z": 0.0,
+          "bootstrap_ci_95pct": [
+            0.78021674524579,
+            0.8014503152397144
+          ]
+        },
+        "spearman_rho_calibrated": {
+          "value": 0.7915031846544496,
+          "p_value": 0.0
+        },
+        "ols_calibration": {
+          "slope": 0.6698070895173686,
+          "intercept": 0.32437338664883164,
+          "r_squared": 0.6124491127296117
+        },
+        "cohen_kappa_w": 0.5760544912103902,
+        "rmse": 0.4560436483322918,
+        "mae": 0.358804564215045
+      }
+    },
+    "caveats": [
+      "LOFO prediction uses item-level mean scores (not instance-level) as both predictor and target. This measures family-level consistency, not individual-judge generalization.",
+      "Calibration (OLS) is fitted and evaluated on the same N=4423 items; Spearman rho is thus not a held-out estimate.",
+      "Families with 1 judge (['Llama_70B']): the 'held-out family mean' is a single judge's raw scores—lower reliability than multi-judge averages."
+    ]
+  }
+}

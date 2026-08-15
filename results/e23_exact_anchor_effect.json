@@ -1,0 +1,37 @@
+{
+ "env": {
+  "script": "e23_exact_anchor_effect.py",
+  "method": "exact linear programming (HiGHS), kernels dropped",
+  "pool": "identical construction and seed to E12",
+  "note": "kernels dropped, so each value is exact for G_0 and a rigorous upper bound on the kernel-constrained diameter",
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "rows": [
+  {
+   "anchor_fraction": 0.0,
+   "n_anchor_items": 0,
+   "n_prototypes": 400,
+   "exact_diameter_G0": 2.0000000000000004
+  },
+  {
+   "anchor_fraction": 0.005,
+   "n_anchor_items": 2,
+   "n_prototypes": 402,
+   "exact_diameter_G0": 2.0
+  },
+  {
+   "anchor_fraction": 0.2,
+   "n_anchor_items": 80,
+   "n_prototypes": 480,
+   "exact_diameter_G0": 2.000000000000001
+  }
+ ],
+ "summary": {
+  "exact_reduction_factor_2_anchors": 1.0000000000000002,
+  "exact_reduction_pct_2_anchors": 2.220446049250313e-14,
+  "sampled_reduction_factor_E12": 1.9585205462784667,
+  "optimised_reduction_factor_E21": 1.1110441839932363
+ }
+}
