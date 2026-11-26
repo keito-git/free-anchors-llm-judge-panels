@@ -6,8 +6,8 @@ of LLM judge panels.
 ## Contents
 
 ```
-code_public/   52 scripts, one per experiment, plus README, LICENSE, requirements
-results/       53 JSON files, the measurements every number in the paper comes from
+code_public/   55 scripts, one per experiment, plus README, LICENSE, requirements
+results/       56 JSON files, the measurements every number in the paper comes from
 data/          the second panel we collected, and the judge-to-family mapping
 ```
 
@@ -24,8 +24,10 @@ pip install -r code_public/requirements.txt
 python code_public/e28_second_panel_analysis.py
 ```
 
-reproduces the second panel's family sweep, where the first family removes
-41.6% of the identification set and the six after it remove nothing measurable.
+reproduces the second panel's family sweep, where the six families after the
+first give no detected reduction in the diameter of the identification set.  (The drop from
+m = 0 to m = 1 starts from the kernel-free bound 2(1 - eta) and is not used as
+a baseline.)
 
 ## Data
 

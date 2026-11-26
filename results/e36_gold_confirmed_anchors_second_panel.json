@@ -1,0 +1,49 @@
+{
+ "env": {
+  "script": "e36_gold_confirmed_anchors_second_panel.py",
+  "seeds": [
+   42,
+   123,
+   456,
+   789,
+   1024,
+   20260804
+  ],
+  "n_dirs_per_seed": 3000,
+  "estimator": "optimised, 16 starts, maxiter 1000",
+  "pool": "E32 top-10% pool restricted to consensus vertex == gold",
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "n_pool_consensus": 29,
+ "n_pool_gold_confirmed": 23,
+ "vertices_covered_by_confirmed": [
+  0,
+  1,
+  2
+ ],
+ "sweep": [
+  {
+   "anchor_fraction": 0.0,
+   "n_anchor_items": 0,
+   "interior_diameter": 0.8895170851044711
+  },
+  {
+   "anchor_fraction": 0.02,
+   "n_anchor_items": 2,
+   "interior_diameter": 0.8531937276177954
+  },
+  {
+   "anchor_fraction": 0.1,
+   "n_anchor_items": 12,
+   "interior_diameter": 0.8450615032113775
+  },
+  {
+   "anchor_fraction": 0.2,
+   "n_anchor_items": 24,
+   "interior_diameter": 0.8450615032113775
+  }
+ ],
+ "reduction_pct_largest": 4.997720969898223
+}

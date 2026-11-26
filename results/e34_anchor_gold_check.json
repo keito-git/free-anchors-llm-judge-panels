@@ -1,0 +1,82 @@
+{
+ "env": {
+  "script": "e34_anchor_gold_check.py",
+  "pool_rule": "top 10% by l1 distance 2(1-max p) to nearest vertex (as E32)",
+  "draws": "rng seed 7, identical order to e32.sweep()",
+  "gpu_used": false,
+  "api_calls": 0,
+  "cost_usd": 0.0
+ },
+ "first_panel": {
+  "pool_top10pct": {
+   "n_items": 442,
+   "max_vertex_distance": 0.06060606060606055,
+   "consensus_vertex_counts": {
+    "0": 442,
+    "1": 0,
+    "2": 0,
+    "3": 0
+   },
+   "gold_label_counts": {
+    "0": 392,
+    "1": 46,
+    "2": 3,
+    "3": 1
+   },
+   "consensus_equals_gold": 392,
+   "consensus_equals_gold_frac": 0.8868778280542986
+  },
+  "drawn_anchors": {
+   "n_items": 97,
+   "max_vertex_distance": 0.06060606060606055,
+   "consensus_vertex_counts": {
+    "0": 97,
+    "1": 0,
+    "2": 0,
+    "3": 0
+   },
+   "gold_label_counts": {
+    "0": 87,
+    "1": 7,
+    "2": 2,
+    "3": 1
+   },
+   "consensus_equals_gold": 87,
+   "consensus_equals_gold_frac": 0.8969072164948454
+  }
+ },
+ "second_panel": {
+  "pool_top10pct": {
+   "n_items": 29,
+   "max_vertex_distance": 0.0,
+   "consensus_vertex_counts": {
+    "0": 14,
+    "1": 7,
+    "2": 8
+   },
+   "gold_label_counts": {
+    "0": 13,
+    "1": 7,
+    "2": 9
+   },
+   "consensus_equals_gold": 23,
+   "consensus_equals_gold_frac": 0.7931034482758621
+  },
+  "drawn_anchors": {
+   "n_items": 25,
+   "max_vertex_distance": 0.0,
+   "consensus_vertex_counts": {
+    "0": 13,
+    "1": 5,
+    "2": 7
+   },
+   "gold_label_counts": {
+    "0": 12,
+    "1": 6,
+    "2": 7
+   },
+   "consensus_equals_gold": 20,
+   "consensus_equals_gold_frac": 0.8
+  }
+ }
+}

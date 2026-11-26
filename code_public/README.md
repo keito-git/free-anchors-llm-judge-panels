@@ -146,6 +146,9 @@ Estimator quality and robustness:
 | `e29_e6a_e10_optimised.py` | Prototype constructions and fitting K on the optimised estimator |
 | `e32_anchor_effect_on_interior.py` | Anchor effect measured on the interior prototypes, both panels |
 | `e33_binary_criterion_real_data.py` | The arithmetic criterion tested on both real panels |
+| `e34_anchor_gold_check.py` | Camera-ready: gold labels of the consensus-selected anchor pools on both panels |
+| `e35_gold_confirmed_anchors.py` | Camera-ready: E32 first-panel sweep with gold-confirmed anchors only |
+| `e36_gold_confirmed_anchors_second_panel.py` | Camera-ready: E32 second-panel sweep with gold-confirmed anchors only |
 
 Second panel (independently judged, requires provider credentials):
 
